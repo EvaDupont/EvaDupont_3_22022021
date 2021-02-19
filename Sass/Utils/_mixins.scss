@@ -1,0 +1,14 @@
+@mixin background-form 
+{
+    background-color:$color-block-form;
+    padding : 10px;
+}
+@mixin padding-form
+{
+    padding: 5px 0px 0px 10px;
+}
+
+@mixin fontstyle-main
+{
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+@import "./Sass/Base/colors";
+@import "./Sass/Base/size&box";
+@import "./Sass/Components/btn";
+@import "./Sass/Layouts/header";
+@import "./Sass/Layouts/footer";
+@import "./Sass/Utils/variables";
+@import "./Sass/Utils/mixins";
+
+/* Barre de recherche de ville*/
+.linear-gradient 
+{
+    background: linear-gradient(to bottom, darken($color-block-form, 15%), $color-block-form) no-repeat ;
+    height: 7px;
+}
+.form-recherche
+{
+    display : flex;
+    justify-content: center;
+    @include background-form;
+}
+#picto-ville
+{
+    margin-left: 45px;
+    @include padding-form;
+}
+#texte-ville 
+{
+    border:hidden;
+    font-weight: bold;
+    color : $color-text;
+    font-family: "Roboto";
+    width: 100%;
+    @include background-form;
+    @include padding-form;
+}
+
+.main-presentation
+{
+    background: $color-block;
+    padding-top : 2px;
+}
+
+.title-main, .paragraph-main
+{
+    @include fontstyle-main;
+}
