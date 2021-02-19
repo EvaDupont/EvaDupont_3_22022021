@@ -18,3 +18,16 @@ p, ul, li
 { 
     font-family: "Roboto";
 }
+
+.main-presentation 
+{
+    background: $color-block;
+    padding-bottom : 30px;
+    padding-top : 2px;
+    
+}
+
+.title-main, .paragraph-main
+{
+    @include fontstyle-main;
+}

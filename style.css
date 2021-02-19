@@ -15,6 +15,16 @@ p, ul, li {
   font-family: "Roboto";
 }
 
+.main-presentation {
+  background: #F2F2F2;
+  padding-bottom: 30px;
+  padding-top: 2px;
+}
+
+.title-main, .paragraph-main {
+  text-align: center;
+}
+
 .logo-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,7 +41,7 @@ p, ul, li {
   padding-bottom: 10px;
 }
 
-/* Barre de recherche de ville*/
+/*Main - formulaire recherche ville */
 .linear-gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#dadada)) no-repeat;
   background: linear-gradient(to bottom, #b4b4b4, #dadada) no-repeat;
@@ -46,31 +56,55 @@ p, ul, li {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #dadada;
-  padding: 10px;
+  padding: 5px 0px 10px 0px;
 }
 
-#picto-ville {
+#form-picto {
   margin-left: 45px;
   padding: 5px 0px 0px 10px;
 }
 
-#texte-ville {
+#form-text {
   border: hidden;
   font-weight: bold;
   color: #000000;
   font-family: "Roboto";
   width: 100%;
+  outline-style: none;
   background-color: #dadada;
-  padding: 10px;
+  padding: 5px 0px 10px 0px;
   padding: 5px 0px 0px 10px;
 }
 
-.main-presentation {
-  background: #F2F2F2;
-  padding-top: 2px;
+/* supprimer bordure au clic */
+.btn {
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
+  border: hidden;
+  -webkit-box-shadow: 5px 5px 5px #dadada;
+          box-shadow: 5px 5px 5px #dadada;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  outline-style: none;
 }
 
-.title-main, .paragraph-main {
-  text-align: center;
+.btn.btn-main {
+  color: white;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
 }
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+/* pour bouton main : 
+affiner la transition
+ */
 /*# sourceMappingURL=style.css.map */

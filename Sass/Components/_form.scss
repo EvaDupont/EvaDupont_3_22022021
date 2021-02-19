@@ -1,0 +1,30 @@
+/*Main - formulaire recherche ville */
+.linear-gradient 
+{
+    background: linear-gradient(to bottom, darken($color-block-form, 15%), $color-block-form) no-repeat ;
+    height: 7px;
+}
+.form-recherche
+{
+    display : flex;
+    justify-content: center;
+    @include background-form;
+}
+#form-picto
+{
+    margin-left: 45px;
+    @include padding-form;
+}
+#form-text
+{
+    border:hidden;
+    font-weight: bold;
+    color : $color-text;
+    font-family: "Roboto";
+    width: 100%;
+    outline-style: none;
+    @include background-form;
+    @include padding-form;
+}
+
+/* supprimer bordure au clic */

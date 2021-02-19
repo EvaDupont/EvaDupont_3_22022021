@@ -1,7 +1,7 @@
 @mixin background-form 
 {
     background-color:$color-block-form;
-    padding : 10px;
+    padding : 5px 0px 10px 0px;
 }
 @mixin padding-form
 {
@@ -12,3 +12,9 @@
 {
     text-align: center;
 }
+
+@mixin background-btn-main
+{
+    background :linear-gradient(170deg, $color-secondary, $color-primary);
+}
+
