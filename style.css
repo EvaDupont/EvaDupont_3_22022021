@@ -12,8 +12,9 @@ h2 {
   font-weight: bold;
 }
 
-p, ul, li, .nbre, footer {
+p, ul, li, .nbre, figure, figcaption, footer {
   font-family: "Roboto";
+  font-size: 1em;
 }
 
 .main-presentation {
@@ -26,7 +27,11 @@ p, ul, li, .nbre, footer {
   text-align: center;
 }
 
-.title-fonctn, .title-restaurants {
+.section-fonctn {
+  margin-bottom: 50px;
+}
+
+.title-fonctn {
   padding-left: 20px;
 }
 
@@ -52,8 +57,14 @@ p, ul, li, .nbre, footer {
   background: #f2eafb;
 }
 
-.bloc-restaurants {
+.section-restaurants {
   background: #F2F2F2;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+}
+
+.title-restaurants {
+  padding: 20px 0px 0px 20px;
 }
 
 .logo-header {
@@ -72,12 +83,33 @@ p, ul, li, .nbre, footer {
   padding-bottom: 10px;
 }
 
+figure a {
+  cursor: pointer;
+  color: #000000;
+}
+
+figure {
+  width: 300px;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-box-shadow: 5px 5px 5px #dadada;
+          box-shadow: 5px 5px 5px #dadada;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 figure img {
   width: 300px;
   height: auto;
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 5px #dadada;
-          box-shadow: 5px 5px 5px #dadada;
+  border-radius: 20px 20px 0px 0px;
+}
+
+figcaption {
+  width: 280px;
+  height: 40px;
+  border-radius: 0px 0px 20px 20px;
+  background: white;
+  padding: 10px;
+  margin-top: -5px;
 }
 
 .nbr-circle {
