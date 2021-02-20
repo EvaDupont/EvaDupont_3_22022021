@@ -1,0 +1,28 @@
+.nbr-circle
+{
+    background : $color-primary;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align : center;
+    color : white;
+    font-family: 'Roboto';
+    left : -7px;
+    position: relative;
+    font-weight: normal;
+}
+
+.mobile, .list
+{
+    color : darken($color-block-form, 35%);
+}
+
+.store
+{
+    color : $color-primary
+}
+
+.mobile, .list, .store
+{
+    padding : 20px;
+}

@@ -8,10 +8,11 @@ h1 {
 
 h2 {
   font-family: "Roboto";
+  font-size: 1.2em;
   font-weight: bold;
 }
 
-p, ul, li {
+p, ul, li, .nbre {
   font-family: "Roboto";
 }
 
@@ -23,6 +24,32 @@ p, ul, li {
 
 .title-main, .paragraph-main {
   text-align: center;
+}
+
+.title-fonctn {
+  padding-left: 20px;
+}
+
+.bloc-fonctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background: #F2F2F2;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px #dadada;
+          box-shadow: 5px 5px 5px #dadada;
+  width: 300px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.bloc-fonctn.store-fonctn {
+  background: #f2eafb;
 }
 
 .logo-header {
@@ -39,6 +66,31 @@ p, ul, li {
   height: auto;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.nbr-circle {
+  background: #9356DC;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto';
+  left: -7px;
+  position: relative;
+  font-weight: normal;
+}
+
+.mobile, .list {
+  color: #818181;
+}
+
+.store {
+  color: #9356DC;
+}
+
+.mobile, .list, .store {
+  padding: 20px;
 }
 
 /*Main - formulaire recherche ville */
@@ -107,4 +159,5 @@ p, ul, li {
 /* pour bouton main : 
 affiner la transition
  */
+/* big spinner feuille chargement cf FA */
 /*# sourceMappingURL=style.css.map */

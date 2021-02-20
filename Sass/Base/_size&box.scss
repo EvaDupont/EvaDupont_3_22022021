@@ -11,10 +11,11 @@ h1
 h2
 {
     font-family: "Roboto";
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-p, ul, li 
+p, ul, li, .nbre
 { 
     font-family: "Roboto";
 }
@@ -24,10 +25,31 @@ p, ul, li
     background: $color-block;
     padding-bottom : 30px;
     padding-top : 2px;
-    
 }
 
 .title-main, .paragraph-main
 {
     @include fontstyle-main;
+}
+
+.title-fonctn
+{
+    padding-left: 20px;
+}
+
+.bloc-fonctn
+{
+    display: flex;
+    align-items: baseline;
+    background: $color-block;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px $color-block-form;
+    width : 300px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+        &.store-fonctn {
+            background: lighten($color-primary, 35%);
+        }
 }
