@@ -72,6 +72,14 @@ p, ul, li, .nbre, footer {
   padding-bottom: 10px;
 }
 
+figure img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px #dadada;
+          box-shadow: 5px 5px 5px #dadada;
+}
+
 .nbr-circle {
   background: #9356DC;
   width: 20px;
@@ -194,6 +202,12 @@ footer li {
 
 .partners {
   padding-right: 5px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 /* big spinner feuille chargement cf FA */
