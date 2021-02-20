@@ -12,7 +12,7 @@ h2 {
   font-weight: bold;
 }
 
-p, ul, li, .nbre {
+p, ul, li, .nbre, footer {
   font-family: "Roboto";
 }
 
@@ -26,7 +26,7 @@ p, ul, li, .nbre {
   text-align: center;
 }
 
-.title-fonctn {
+.title-fonctn, .title-restaurants {
   padding-left: 20px;
 }
 
@@ -50,6 +50,10 @@ p, ul, li, .nbre {
 
 .bloc-fonctn.store-fonctn {
   background: #f2eafb;
+}
+
+.bloc-restaurants {
+  background: #F2F2F2;
 }
 
 .logo-header {
@@ -159,5 +163,38 @@ p, ul, li, .nbre {
 /* pour bouton main : 
 affiner la transition
  */
+footer {
+  background: black;
+  color: white;
+  font-size: 0.8em;
+}
+
+.logo-footer {
+  width: 90px;
+  height: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+footer ul {
+  list-style: none;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+footer li {
+  line-height: 1.8em;
+}
+
+.ustensils {
+  padding-right: 10px;
+}
+
+.partners {
+  padding-right: 5px;
+}
+
 /* big spinner feuille chargement cf FA */
 /*# sourceMappingURL=style.css.map */

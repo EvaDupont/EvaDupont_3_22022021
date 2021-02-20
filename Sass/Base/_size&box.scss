@@ -15,7 +15,7 @@ h2
     font-weight: bold;
 }
 
-p, ul, li, .nbre
+p, ul, li, .nbre, footer
 { 
     font-family: "Roboto";
 }
@@ -32,7 +32,7 @@ p, ul, li, .nbre
     @include fontstyle-main;
 }
 
-.title-fonctn
+.title-fonctn, .title-restaurants
 {
     padding-left: 20px;
 }
@@ -52,4 +52,10 @@ p, ul, li, .nbre
         &.store-fonctn {
             background: lighten($color-primary, 35%);
         }
+}
+
+.bloc-restaurants
+{
+    background: $color-block;
+
 }
