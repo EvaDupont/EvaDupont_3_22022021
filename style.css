@@ -88,6 +88,7 @@ span {
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
   position: relative;
   bottom: 60px;
 }
@@ -256,6 +257,8 @@ figcaption {
 
 .btn.btn-main {
   color: white;
+  width: 200px;
+  margin-top: 30px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
 }
 
@@ -268,7 +271,7 @@ figcaption {
   transition: transform 500ms, -webkit-transform 500ms;
 }
 
-/* pour bouton main : 
+/* pour bouton main + fiche menu : 
 affiner la transition
  */
 footer {
