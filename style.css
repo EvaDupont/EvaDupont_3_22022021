@@ -17,7 +17,7 @@ h2 {
   font-weight: bold;
 }
 
-p, ul, li, .nbre, figure, figcaption, .title-meal, footer {
+p, ul, li, .nbre, figure, figcaption, .new, .title-meal, footer {
   font-family: "Roboto";
   font-size: 1em;
 }
@@ -25,6 +25,12 @@ p, ul, li, .nbre, figure, figcaption, .title-meal, footer {
 span {
   position: absolute;
   right: 30px;
+}
+
+.linear-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#dadada)) no-repeat;
+  background: linear-gradient(to bottom, #b4b4b4, #dadada) no-repeat;
+  height: 7px;
 }
 
 .main-presentation {
@@ -73,24 +79,37 @@ span {
   margin-bottom: 0px;
 }
 
-.title-restaurants {
-  padding: 20px 0px 0px 20px;
-}
-
+/*fiche restaurant*/
 .img-menu {
   width: 100%;
   height: auto;
+  position: relative;
+}
+
+.title-restaurants {
+  background: #F2F2F2;
+  border-radius: 30px 30px 0px 0px;
+  width: 300px;
+  padding: 20px 0px 0px 20px;
 }
 
 .section-menu {
   background: #F2F2F2;
-  border-radius: 30px 30px 0px 0px;
+  height: auto;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
-  position: relative;
-  bottom: 60px;
+  padding-bottom: 50px;
+}
+
+.title-meal {
+  padding-top: 20px;
+}
+
+.underline-meal {
+  background: #99E2D0;
+  width: 40px;
+  height: 3px;
 }
 
 .meal-menu {
@@ -137,6 +156,20 @@ figure {
   margin-right: auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  position: relative;
+}
+
+.new {
+  background: #99E2D0;
+  border-radius: 2px;
+  color: #278870;
+  font-weight: bold;
+  text-align: center;
+  width: 80px;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 figure img {
@@ -203,16 +236,10 @@ figcaption {
 .heart-menu {
   position: relative;
   left: 310px;
-  bottom: 60px;
+  bottom: 40px;
 }
 
 /*Main - formulaire recherche ville */
-.linear-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#dadada)) no-repeat;
-  background: linear-gradient(to bottom, #b4b4b4, #dadada) no-repeat;
-  height: 7px;
-}
-
 .form-recherche {
   display: -webkit-box;
   display: -ms-flexbox;
