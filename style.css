@@ -4,6 +4,11 @@ body {
 
 h1 {
   font-family: "Shrikhand";
+  font-size: 1.8em;
+}
+
+h1.title-menu {
+  margin-bottom: 0px;
 }
 
 h2 {
@@ -12,9 +17,14 @@ h2 {
   font-weight: bold;
 }
 
-p, ul, li, .nbre, figure, figcaption, footer {
+p, ul, li, .nbre, figure, figcaption, .title-meal, footer {
   font-family: "Roboto";
   font-size: 1em;
+}
+
+span {
+  position: absolute;
+  right: 30px;
 }
 
 .main-presentation {
@@ -67,6 +77,33 @@ p, ul, li, .nbre, figure, figcaption, footer {
   padding: 20px 0px 0px 20px;
 }
 
+.img-menu {
+  width: 100%;
+  height: auto;
+}
+
+.section-menu {
+  background: #F2F2F2;
+  border-radius: 30px 30px 0px 0px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  bottom: 60px;
+}
+
+.meal-menu {
+  background: #FFFFFF;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px #dadada;
+          box-shadow: 5px 5px 5px #dadada;
+  padding-left: 10px;
+  margin-top: 20px;
+  line-height: 1.8em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,11 +127,15 @@ figure a {
 
 figure {
   width: 300px;
+  height: 250px;
   border-radius: 20px 20px 20px 20px;
   -webkit-box-shadow: 5px 5px 5px #dadada;
           box-shadow: 5px 5px 5px #dadada;
+  background: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 figure img {
@@ -107,9 +148,12 @@ figcaption {
   width: 280px;
   height: 40px;
   border-radius: 0px 0px 20px 20px;
-  background: white;
+  background: #FFFFFF;
   padding: 10px;
   margin-top: -5px;
+  position: absolute;
+  color: #000000;
+  text-decoration: none;
 }
 
 .nbr-circle {
@@ -135,6 +179,30 @@ figcaption {
 
 .mobile, .list, .store {
   padding: 20px;
+}
+
+.heart-choice {
+  background: #FFFFFF;
+  position: relative;
+  left: 250px;
+  top: 5px;
+}
+
+.heart-choice.heart-full {
+  color: yellow;
+}
+
+.return {
+  padding-top: 5px;
+  padding-left: 50px;
+  position: absolute;
+  top: 10px;
+}
+
+.heart-menu {
+  position: relative;
+  left: 310px;
+  bottom: 60px;
 }
 
 /*Main - formulaire recherche ville */
@@ -205,7 +273,7 @@ affiner la transition
  */
 footer {
   background: black;
-  color: white;
+  color: #FFFFFF;
   font-size: 0.8em;
 }
 

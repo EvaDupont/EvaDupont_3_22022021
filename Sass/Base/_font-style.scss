@@ -6,6 +6,12 @@ body
 h1
 {
     font-family: "Shrikhand";
+    font-size: 1.8em;
+        &.title-menu 
+        {
+            margin-bottom: 0px;
+        }
+
 }
 
 h2
@@ -15,9 +21,14 @@ h2
     font-weight: bold;
 }
 
-p, ul, li, .nbre, figure, figcaption, footer
+p, ul, li, .nbre, figure, figcaption, .title-meal, footer
 { 
     font-family: "Roboto";
     font-size: 1em;
 }
 
+span
+{
+    position: absolute;
+    right : 30px;
+}
