@@ -1,14 +1,26 @@
+@charset "UTF-8";
+/*
+
+1280px (desktop)
+1024 (ipad pro)
+768px (ipad)
+414px (code de référence)
+375px
+320px
+
+*/
 body {
   margin: 0px;
 }
 
 h1 {
   font-family: "Shrikhand";
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 h1.title-menu {
   margin-bottom: 0px;
+  position: relative;
 }
 
 h2 {
@@ -79,18 +91,24 @@ span {
   margin-bottom: 0px;
 }
 
+.title-section-restaurants {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
 /*fiche restaurant*/
-.img-menu {
+.img-restaurants {
   width: 100%;
   height: auto;
-  position: relative;
 }
 
 .title-restaurants {
   background: #F2F2F2;
   border-radius: 30px 30px 0px 0px;
-  width: 300px;
-  padding: 20px 0px 0px 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-top: -50px;
+  position: relative;
 }
 
 .section-menu {
@@ -234,9 +252,7 @@ figcaption {
 }
 
 .heart-menu {
-  position: relative;
-  left: 310px;
-  bottom: 40px;
+  padding-left: 10px;
 }
 
 /*Main - formulaire recherche ville */

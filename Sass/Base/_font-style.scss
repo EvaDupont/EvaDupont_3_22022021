@@ -1,34 +1,48 @@
+/*
+
+1280px (desktop)
+1024 (ipad pro)
+768px (ipad)
+414px (code de référence)
+375px
+320px
+
+*/
+
 body
-{
-    margin : 0px; 
-}
-
+    {
+        margin : 0px; 
+    }  
 h1
-{
-    font-family: "Shrikhand";
-    font-size: 1.8em;
-        &.title-menu 
-        {
-            margin-bottom: 0px;
-        }
-
-}
+    {
+        font-family: "Shrikhand";
+        font-size: 1.6em;
+            &.title-menu 
+            {
+                margin-bottom: 0px;
+                position: relative;  
+            }
+    }
 
 h2
-{
-    font-family: "Roboto";
-    font-size: 1.2em;
-    font-weight: bold;
-}
+    {
+        font-family: "Roboto";
+        font-size: 1.2em;
+        font-weight: bold;
+    }
 
 p, ul, li, .nbre, figure, figcaption, .new, .title-meal, footer
-{ 
-    font-family: "Roboto";
-    font-size: 1em;
-}
+    { 
+        font-family: "Roboto";
+        font-size: 1em;
+    }
 
 span
-{
-    position: absolute;
-    right : 30px;
-}
+        {
+            position: absolute;
+            right : 30px;
+        }
+
+
+
+
