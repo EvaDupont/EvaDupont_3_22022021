@@ -1,9 +1,13 @@
+/*--> INDEX <-- */
+
+/* bordure top bloc recherche ville */
 .linear-gradient 
 {
     background: linear-gradient(to bottom, darken($color-block-form, 15%), $color-block-form) no-repeat ;
     height: 7px;
 }
 
+/*bloc presentation du site*/
 .main-presentation 
 {
     background: $color-block;
@@ -16,6 +20,7 @@
     @include fontstyle-main;
 }
 
+/*bloc fonctionnement du site */
 .section-fonctn 
 {
     margin-bottom: 50px;
@@ -38,12 +43,18 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-        &.store-fonctn 
-        {
-            background: lighten($color-primary, 35%);
-        }
+    &:hover
+    {
+        background: lighten($color-primary, 35%);
+            .store, .mobile, .list
+            {
+            color : $color-primary;
+            }
+    }
+
 }
 
+/*bloc fiches restaurants */
 .section-restaurants
 {
     background: $color-block;
@@ -58,7 +69,7 @@
 }
 
 
-/*fiche restaurant*/
+/*--> FICHES RESTO x4 <--*/
 
 .img-restaurants
 {

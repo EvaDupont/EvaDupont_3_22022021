@@ -91,12 +91,15 @@ span {
   right: 30px;
 }
 
+/*--> INDEX <-- */
+/* bordure top bloc recherche ville */
 .linear-gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#dadada)) no-repeat;
   background: linear-gradient(to bottom, #b4b4b4, #dadada) no-repeat;
   height: 7px;
 }
 
+/*bloc presentation du site*/
 .main-presentation {
   background: #F2F2F2;
   padding-bottom: 30px;
@@ -107,6 +110,7 @@ span {
   text-align: center;
 }
 
+/*bloc fonctionnement du site */
 .section-fonctn {
   margin-bottom: 50px;
 }
@@ -133,10 +137,15 @@ span {
   margin-bottom: 20px;
 }
 
-.bloc-fonctn.store-fonctn {
+.bloc-fonctn:hover {
   background: #f2eafb;
 }
 
+.bloc-fonctn:hover .store, .bloc-fonctn:hover .mobile, .bloc-fonctn:hover .list {
+  color: #9356DC;
+}
+
+/*bloc fiches restaurants */
 .section-restaurants {
   background: #F2F2F2;
   padding-bottom: 50px;
@@ -148,7 +157,7 @@ span {
   padding-top: 20px;
 }
 
-/*fiche restaurant*/
+/*--> FICHES RESTO x4 <--*/
 .img-restaurants {
   width: 100%;
   height: auto;
@@ -274,12 +283,8 @@ figcaption {
   font-weight: normal;
 }
 
-.mobile, .list {
+.mobile, .list, .store {
   color: #818181;
-}
-
-.store {
-  color: #9356DC;
 }
 
 .mobile, .list, .store {
@@ -321,28 +326,6 @@ figcaption {
 .heart.empty {
   background: #FFFFFF;
   color: #dadada;
-}
-
-@-webkit-keyframes favorite-heart {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes favorite-heart {
-  from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
 }
 
 /* icone retour page menu x4*/

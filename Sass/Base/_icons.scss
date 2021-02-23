@@ -13,14 +13,9 @@
     font-weight: normal;
 }
 
-.mobile, .list
+.mobile, .list, .store
 {
     color : darken($color-block-form, 35%);
-}
-
-.store
-{
-    color : $color-primary
 }
 
 .mobile, .list, .store
@@ -46,13 +41,11 @@
     position: relative;
     left : 250px;
     top : 5px; 
-    
         &:hover
         {
             opacity : 0;
             transform-origin: top;
             transition-duration: 1s;
-   
         }
         &.full
         {
@@ -67,23 +60,7 @@
         background: $color-white; 
         color : $color-block-form;
         }
-       
 }
-
-@keyframes favorite-heart
-{
-    from 
-    {
-        transform: scale(0)
-    }
-
-    to 
-    {
-        transform : scale(1)
-    }
-}
-
-
 
 /* icone retour page menu x4*/
 .return
