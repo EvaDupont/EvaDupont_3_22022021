@@ -283,16 +283,38 @@ figcaption {
   padding: 20px;
 }
 
-.heart-choice {
-  background: #FFFFFF;
+.full-empty i {
+  position: absolute;
+  -webkit-transition: opacity 100ms;
+  transition: opacity 100ms;
+}
+
+.full-empty {
+  position: relative;
+}
+
+.heart {
   position: relative;
   left: 250px;
   top: 5px;
 }
 
-.heart-choice.heart-full {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(top, #9356DC, #FF79DA);
+.heart.full {
+  color: #9356DC;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart:hover {
+  opacity: 0;
+  -webkit-transition-duration: 80ms;
+          transition-duration: 80ms;
+}
+
+.heart.empty {
+  background: #FFFFFF;
+  color: #dadada;
 }
 
 .return {
