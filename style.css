@@ -1,4 +1,54 @@
 @charset "UTF-8";
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F2F2;
+  width: 100%;
+  height: auto;
+}
+
+.loading .title-loading {
+  padding-top: 30px;
+}
+
+.loading .cheers {
+  animation: loading-cheers 1200ms alternate-reverse infinite;
+}
+
+@-webkit-keyframes loading-cheers {
+  from {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+    color: #9356DC;
+  }
+  to {
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+    color: #FF79DA;
+  }
+}
+
+@keyframes loading-cheers {
+  from {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+    color: #9356DC;
+  }
+  to {
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+    color: #FF79DA;
+  }
+}
+
 /*
 
 1280px (desktop)
@@ -241,7 +291,8 @@ figcaption {
 }
 
 .heart-choice.heart-full {
-  color: yellow;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(top, #9356DC, #FF79DA);
 }
 
 .return {
@@ -306,17 +357,11 @@ figcaption {
 }
 
 .btn:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  opacity: 70%;
+  -webkit-box-shadow: 5px 5px 5px #000000;
+          box-shadow: 5px 5px 5px #000000;
 }
 
-/* pour bouton main + fiche menu : 
-affiner la transition
- */
 footer {
   background: black;
   color: #FFFFFF;
