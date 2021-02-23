@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* loading page chargement */
 .loading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +50,7 @@
   }
 }
 
+/* chargement progressive menu */
 /*
 
 1280px (desktop)
@@ -258,6 +260,7 @@ figcaption {
   text-decoration: none;
 }
 
+/*section fonctionnement : icones circle + texte */
 .nbr-circle {
   background: #9356DC;
   width: 20px;
@@ -283,6 +286,7 @@ figcaption {
   padding: 20px;
 }
 
+/* icone favori : coeur : index*/
 .full-empty i {
   position: absolute;
   -webkit-transition: opacity 100ms;
@@ -299,6 +303,14 @@ figcaption {
   top: 5px;
 }
 
+.heart:hover {
+  opacity: 0;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
 .heart.full {
   color: #9356DC;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
@@ -306,17 +318,34 @@ figcaption {
   -webkit-text-fill-color: transparent;
 }
 
-.heart:hover {
-  opacity: 0;
-  -webkit-transition-duration: 80ms;
-          transition-duration: 80ms;
-}
-
 .heart.empty {
   background: #FFFFFF;
   color: #dadada;
 }
 
+@-webkit-keyframes favorite-heart {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes favorite-heart {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* icone retour page menu x4*/
 .return {
   padding-top: 5px;
   padding-left: 50px;
@@ -324,6 +353,7 @@ figcaption {
   top: 10px;
 }
 
+/*icone favori : coeur : page menu */
 .heart-menu {
   padding-left: 10px;
 }

@@ -1,5 +1,5 @@
 
-
+/* loading page chargement */
 .loading
 {
     display: flex;
@@ -18,8 +18,6 @@
     }
 }
 
-
-
 @keyframes loading-cheers
     {
         from
@@ -34,3 +32,7 @@
             color: $color-secondary;
         }
     }
+
+/* chargement progressive menu */
+
+
