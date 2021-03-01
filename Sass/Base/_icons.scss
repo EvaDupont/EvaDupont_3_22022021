@@ -45,7 +45,7 @@
         {
             opacity : 0;
             transform-origin: top;
-            transition-duration: 1s;
+            transition-duration: 2s;
         }
         &.full
         {
@@ -69,6 +69,10 @@
     padding-left : 50px;
     position : absolute;
     top : 10px;
+    &:active
+        {
+            color: $color-primary ;
+        }
     
 }
 

@@ -1,0 +1,96 @@
+#loading
+{
+    
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin :0px;
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    top : 200px;
+    background-size: red; 
+    
+    animation-name: loading;
+    animation-duration: 7s;
+}
+
+@keyframes loading 
+{
+    0%
+    {
+        display: contents;
+    }
+
+    100%
+    {
+        display: none;
+    }
+}
+.spinner
+        {
+            color: $color-primary;
+            animation-name: loading-spinner;
+            margin: 0px;
+            animation-duration:  5s;
+            animation-timing-function: linear; 
+        }
+
+@keyframes loading-spinner
+{
+    0%
+    {
+        
+        transform: rotate(0deg);
+    }
+    20%
+    {
+        color: $color-primary;        
+    }
+    40%
+    {
+        color: $color-secondary;
+    }
+    60% 
+    {
+        color: $color-tertiary;        
+    }
+    80%
+    {
+        color : $color-primary;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}     
+
+.loading-text
+        {
+            font-size: 0.7em;
+            margin : 0px;
+            animation-name: loading-text;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+        } 
+ 
+@keyframes loading-text
+{
+    0%
+    {
+        transform : scale(1); 
+    }
+
+    100%
+    {
+        transform: scale(1.5);
+    }
+}
+
+
+
+
+
+
+
+

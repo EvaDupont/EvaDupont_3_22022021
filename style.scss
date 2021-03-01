@@ -1,7 +1,9 @@
-@import "./Sass/Base/colors";
-@import "./Sass/Utils/animations";
-@import "./Sass/Utils/mixins";
 @import "./Sass/Base/font-style";
+@import "./Sass/Base/colors";
+
+@import "./Sass/Utils/testloading";
+@import "./Sass/Utils/mixins";
+
 @import "./Sass/Base/block-size";
 @import "./Sass/Layouts/header";
 @import "./Sass/Layouts/figures";
@@ -10,5 +12,3 @@
 @import "./Sass/Components/btn";
 @import "./Sass/Layouts/footer";
 
-
-/* big spinner feuille chargement cf FA */
