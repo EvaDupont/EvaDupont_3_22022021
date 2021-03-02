@@ -529,7 +529,7 @@ figcaption {
 .heart {
   position: relative;
   left: 250px;
-  top: 5px;
+  top: -35px;
 }
 
 .heart:hover {
