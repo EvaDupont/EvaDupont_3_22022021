@@ -113,6 +113,12 @@
     height: 3px;
 }
 
+.container-meal
+{
+    display: block;
+    justify-content: space-between;
+}
+
 .meal-menu
 {
     background: $color-white;
@@ -128,24 +134,51 @@
     min-width:0;
     font-size: 0.7em; 
     position: relative;
+    z-index: 5;
     &:hover
         {
-            animation-name : menu-check;
-            animation-duration: 1500ms;
-            animation-timing-function: linear;
             border-radius: 10px 0px 0px 10px;
-            background: red;
+            animation-name : menu-check;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;                
         }
 }
+.check-menu
+{ 
+    background-color: $color-tertiary;
+    color: $color-white;
+    border-radius: 0px 10px 10px 0px;
+    //box-shadow: 5px 5px 5px $color-block-form;
+    padding : 10px;
+    height : 17px;
+    width: 20px;
+    position: relative;
+    z-index: 3;
+    bottom:  35px;
+    right : -420px;
+    
+    
+        .check-icons:hover
+        {
+        box-shadow: 5px 5px 5px $color-block-form;
+        transform-origin: center;
+        transform : rotate(-360deg);
+        transition: transform 500ms linear ; 
+        }
+    
+
+}
+
 @keyframes menu-check
 {
     0%
     {
-        margin-right : 20PX; 
+        margin-right : 20px; 
     }
+  
     100%
     {
-        margin-right: 70px;
+        margin-right : 40px; 
     }
 }
 
@@ -155,9 +188,7 @@
     justify-content: space-between;
     white-space: nowrap;
     padding-right: 10px;
-    text-overflow: ellipsis;
 }     
-
 .flex-title
 {
     overflow: hidden;
@@ -171,28 +202,14 @@
     font-weight: bold;
 }
 
-/*.check-icons
-            { 
-                position: absolute;
-                right : 0px;
-                bottom: 0px;
-                background-color: $color-tertiary;
-                color: $color-white;
-                border-radius: 0px 10px 10px 0px;
-                box-shadow: 5px 5px 5px $color-block-form;
-                padding : 10px;
-                height : 17px;
-                
-                    &:active
-                    {
-                        transform-origin: center;
-                        transform : rotate(-360deg);
-                        transition: transform 500ms linear;
-                    }
-            }       
-        
-}*/
+
+
+
+
+
+
+
+
+
     
-
-
-
+        
