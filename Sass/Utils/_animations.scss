@@ -1,4 +1,3 @@
-/* -- ANIMATION VALIDATION UN PLAT -- */
 
 /* animation icone coeur à remplir */
 
@@ -46,6 +45,7 @@
 }
 
 /* animation reduction bandeau des plats */
+
 .meal-menu
 {
     background: $color-white;
@@ -63,28 +63,40 @@
     font-size: 0.7em; 
     position: relative;
     z-index: 5;
-    &:hover 
+    &:hover
         {
             box-shadow: none;
             animation-name : menu-reduce;
-            animation-duration: 1s;
+            animation-duration: 700ms;
             animation-fill-mode: both;
             animation-timing-function:  linear; 
+            transition : all;
+            +.check
+            {
+            box-shadow: 5px 5px 5px $color-block-form;
+            background-color: $color-tertiary;
+            color: $color-white;
+            border-radius: 0px 10px 10px 0px;
+            height : 17px;
+            width: 20px;
+            padding : 10px;
+            transform-origin: right;
+            position: absolute;
+            right : 4%;
+            margin-top: 20px;
+                .check-icons 
+                {
+                box-shadow: none;
+                transform-origin: center;
+                animation-name: check;
+                animation-duration: 900ms; 
+                animation-delay: 500ms ;
+                animation-iteration-count: 1;
+                }
+            }
         }
-    &::after
-    {
-        .check-icons 
-        {
-            box-shadow: none;
-            transform-origin: center;
-            animation-name: check;
-            animation-duration: 900ms; 
-            animation-delay:1s ;
-            animation-iteration-count: infinite;
-        }
-    }
 }
-
+ 
 @keyframes menu-reduce
 {
     0%
@@ -100,29 +112,6 @@
     }
 }
 
-/* animation page resto - coche verte de validation d'un plat */
-
-/*.check-icons:hover
-{
-    box-shadow: none;
-    transform-origin: center;
-    transform : rotate(360deg) 900ms ;
-
-}
-
-
-
-
-.check-icons 
-        {
-            box-shadow: none;
-            transform-origin: center;
-            animation-name: check;
-            animation-duration: 900ms; 
-            animation-delay:1s ;
-            animation-iteration-count: infinite;
-        }*/
-
 @keyframes check 
 {
     0%
@@ -136,20 +125,25 @@
     }
 }
 
+/* arrivée progressive du menu au chargement de la page */
 
-
-/* A FAIRE arrivée menu au chargement de la page
-.entrees 
+/*.entrees 
 {
     animation-name: apparition-menu;
     animation-duration: 700ms;
     animation-fill-mode: both;
     animation-timing-function:  ease-in-out; 
+    animation-iteration-count: 1;
 }
 
 .plats 
 {
-  animation: apparition-menu 700ms 400ms both ease-in-out; 
+    animation-name: apparition-menu;
+    animation-duration:  700ms; 
+    animation-delay : 400ms; 
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
 }
 
 .desserts 
@@ -159,19 +153,15 @@
   animation-delay : 800ms; 
   animation-fill-mode: both;
   animation-timing-function: ease-in-out; 
-}*/
+  animation-iteration-count: 1;
+}
 
-
-
-
-
-
-/*@keyframes apparition-menu
+@keyframes apparition-menu
 {
     0% 
     {
     opacity: 0;
-    transform: translateY(10px); 
+    transform: translateY(15px); 
     }
     100% 
     {

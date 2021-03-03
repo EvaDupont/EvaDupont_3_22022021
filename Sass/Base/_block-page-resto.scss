@@ -45,29 +45,13 @@
     height: 3px;
 }
 
-/*FLEXBOX pour bloc plat et coche verte */
+/*FLEXBOX plat + coche verte*/
+
 .container-meal
 {
     display: flex;
     justify-content: space-between;
     white-space: nowrap;
-}
-
-/* Background coche validation plat */
-.check-menu 
-{ 
-    box-shadow: 5px 5px 5px $color-block-form;
-    background-color: $color-tertiary;
-    color: $color-white;
-    border-radius: 0px 10px 10px 0px;
-    height : 17px;
-    width: 20px;
-    padding : 10px;
-    transform-origin: right;
-    position: absolute;
-    right : 4%;
-    margin-top: 20px;
-    transition: opacity 100ms transform 300ms 100ms linear; 
 }
 
 /*FLEXBOX titre plat et prix */

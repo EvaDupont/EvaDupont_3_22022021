@@ -199,7 +199,6 @@ footer {
   }
 }
 
-/* -- ANIMATION VALIDATION UN PLAT -- */
 /* animation icone coeur à remplir */
 .full-empty, .full-empties {
   position: relative;
@@ -267,15 +266,33 @@ footer {
           box-shadow: none;
   -webkit-animation-name: menu-reduce;
           animation-name: menu-reduce;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+  -webkit-transition: all;
+  transition: all;
 }
 
-.meal-menu::after .check-icons {
+.meal-menu:hover + .check {
+  -webkit-box-shadow: 5px 5px 5px #dadada;
+          box-shadow: 5px 5px 5px #dadada;
+  background-color: #99E2D0;
+  color: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+  height: 17px;
+  width: 20px;
+  padding: 10px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  position: absolute;
+  right: 4%;
+  margin-top: 20px;
+}
+
+.meal-menu:hover + .check .check-icons {
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transform-origin: center;
@@ -284,10 +301,10 @@ footer {
           animation-name: check;
   -webkit-animation-duration: 900ms;
           animation-duration: 900ms;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
 @-webkit-keyframes menu-reduce {
@@ -312,27 +329,6 @@ footer {
   }
 }
 
-/* animation page resto - coche verte de validation d'un plat */
-/*.check-icons:hover
-{
-    box-shadow: none;
-    transform-origin: center;
-    transform : rotate(360deg) 900ms ;
-
-}
-
-
-
-
-.check-icons 
-        {
-            box-shadow: none;
-            transform-origin: center;
-            animation-name: check;
-            animation-duration: 900ms; 
-            animation-delay:1s ;
-            animation-iteration-count: infinite;
-        }*/
 @-webkit-keyframes check {
   0% {
     -webkit-transform: rotate(0deg);
@@ -343,6 +339,7 @@ footer {
             transform: rotate(360deg);
   }
 }
+
 @keyframes check {
   0% {
     -webkit-transform: rotate(0deg);
@@ -354,18 +351,24 @@ footer {
   }
 }
 
-/* A FAIRE arrivée menu au chargement de la page
-.entrees 
+/* arrivée progressive du menu au chargement de la page */
+/*.entrees 
 {
     animation-name: apparition-menu;
     animation-duration: 700ms;
     animation-fill-mode: both;
     animation-timing-function:  ease-in-out; 
+    animation-iteration-count: 1;
 }
 
 .plats 
 {
-  animation: apparition-menu 700ms 400ms both ease-in-out; 
+    animation-name: apparition-menu;
+    animation-duration:  700ms; 
+    animation-delay : 400ms; 
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
 }
 
 .desserts 
@@ -375,13 +378,15 @@ footer {
   animation-delay : 800ms; 
   animation-fill-mode: both;
   animation-timing-function: ease-in-out; 
-}*/
-/*@keyframes apparition-menu
+  animation-iteration-count: 1;
+}
+
+@keyframes apparition-menu
 {
     0% 
     {
     opacity: 0;
-    transform: translateY(10px); 
+    transform: translateY(15px); 
     }
     100% 
     {
@@ -454,7 +459,7 @@ footer {
   height: 3px;
 }
 
-/*FLEXBOX pour bloc plat et coche verte */
+/*FLEXBOX plat + coche verte*/
 .container-meal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,25 +468,6 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   white-space: nowrap;
-}
-
-/* Background coche validation plat */
-.check-menu {
-  -webkit-box-shadow: 5px 5px 5px #dadada;
-          box-shadow: 5px 5px 5px #dadada;
-  background-color: #99E2D0;
-  color: #FFFFFF;
-  border-radius: 0px 10px 10px 0px;
-  height: 17px;
-  width: 20px;
-  padding: 10px;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  position: absolute;
-  right: 4%;
-  margin-top: 20px;
-  -webkit-transition: opacity 100ms transform 300ms 100ms linear;
-  transition: opacity 100ms transform 300ms 100ms linear;
 }
 
 /*FLEXBOX titre plat et prix */
