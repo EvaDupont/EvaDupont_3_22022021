@@ -2,10 +2,13 @@
 @import "./Sass/Base/colors";
 @import "./Sass/Utils/loading";
 @import "./Sass/Utils/mixins";
-@import "./Sass/Base/block-size";
-@import "./Sass/Layouts/header";
-@import "./Sass/Layouts/figures";
-@import "./Sass/Base/icons";
+@import "./Sass/Utils/animations";
+@import "./Sass/Base/main-index";
+@import "./Sass/Base/block-page-resto";
+@import "./Sass/Layouts/header-index";
+@import "./Sass/Layouts/header-resto";
+@import "./Sass/Base/section-resto-index";
+@import "./Sass/Base/section-fonctn-index";
 @import "./Sass/Components/form";
 @import "./Sass/Components/btn";
 @import "./Sass/Layouts/footer";

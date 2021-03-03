@@ -1,0 +1,27 @@
+.logo-header
+{
+    display: flex;
+    justify-content: center;
+        .logo-img 
+        {
+            width: 150px;
+            height: auto; 
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+}
+
+/* icone retour page menu x4*/
+.return
+{
+    padding-top : 5px;
+    padding-left : 50px;
+    position : absolute;
+    top : 10px;
+    &:active
+        {
+            color: $color-primary ;
+        }
+    
+}

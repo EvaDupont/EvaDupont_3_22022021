@@ -1,0 +1,152 @@
+/*--> FICHES RESTO x4 <--*/
+
+/* image d'accueil resto */
+.img-restaurants
+{
+    width: 100%;
+    height: auto;
+}
+
+/*nom du resto */
+.title-restaurants
+{
+    background: $color-block;
+    border-radius: 30px 30px 0px 0px;
+    padding-left :  20px;
+    padding-top: 10px;
+    margin-top : -50px;
+    position: relative;
+}
+
+/*icone favori : coeur */
+.heart-menu
+{
+    padding-left: 10px;
+}
+
+/*bloc liste des plats*/
+.section-menu
+{
+    background: $color-block;
+    height: auto;
+    padding-top : 10px;
+    padding-left : 20px;
+    padding-right: 20px;
+    padding-bottom: 50px; 
+}
+
+/*titre catégorie de plat + soulignement*/
+.title-meal 
+{
+    padding-top: 20px;
+    font-size: 1em;
+    font-family: 'Roboto';
+}
+.underline-meal
+{
+    background: $color-tertiary;
+    width : 40px;
+    height: 3px;
+}
+
+/*FLEXBOX pour bloc plat et coche verte */
+.container-meal
+{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+/*bloc plat */
+.meal-menu
+{
+    background: $color-white;
+    font-family: 'Roboto';
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px $color-block-form;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-top : 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width:0;
+    font-size: 0.7em; 
+    position: relative;
+    z-index: 5;
+    &:hover
+        {
+            border-radius: 10px 0px 0px 10px;
+            animation-name : menu-reduce;
+            animation-duration: 1500ms;
+            animation-timing-function: ease-in-out;                
+        }  
+ 
+}
+.check-icons:hover
+        {
+            transform-origin: center;
+            animation-name: check;
+            animation-duration: 1000ms;
+        }
+
+/* Background coche validation plat */
+.check-menu 
+{ 
+    box-shadow: 5px 5px 5px $color-block-form;
+    background-color: $color-tertiary;
+    color: $color-white;
+    border-radius: 0px 10px 10px 0px;
+    height : 17px;
+    width: 20px;
+    padding : 10px;
+    transform-origin: right;
+    position: absolute;
+    right : 4%;
+    margin-top: 80px;
+    transition: opacity 100ms transform 300ms 100ms linear; 
+}
+
+/*FLEXBOX titre plat et prix */
+.meal-flex
+{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    padding-right: 10px;
+}     
+.flex-title
+{
+    overflow: hidden;
+    min-width: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.flex-price
+{
+    font-weight: bold;
+}
+
+/* A FAIRE arrivée menu au chargement de la page*/
+.entrees 
+{
+    animation-name: apparition-menu;
+    animation-duration: 700ms;
+    //animation-fill-mode: both;
+    //animation-timing-function:  ease-in-out; 
+}
+
+.plats 
+{
+  animation: apparition-menu 700ms 400ms both ease-in-out; 
+}
+
+.desserts 
+{
+  animation-name: apparition-menu;
+  animation-duration:  700ms; 
+  animation-delay : 800ms; 
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out; 
+}

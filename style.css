@@ -223,7 +223,66 @@ footer {
   }
 }
 
-/*--> INDEX <-- */
+/* animation reduction bandeau des plats */
+@-webkit-keyframes menu-reduce {
+  0% {
+    margin-right: 20px;
+  }
+  50% {
+    margin-right: 40px;
+  }
+  100% {
+    margin-right: 20px;
+  }
+}
+@keyframes menu-reduce {
+  0% {
+    margin-right: 20px;
+  }
+  50% {
+    margin-right: 40px;
+  }
+  100% {
+    margin-right: 20px;
+  }
+}
+
+@-webkit-keyframes check {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes check {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+/*@keyframes apparition-menu
+{
+    0% 
+    {
+    opacity: 0;
+    transform: translateY(10px); 
+    }
+    100% 
+    {
+    opacity: 1;
+    transform: translateY(0); 
+    } 
+}*/
+/*INDEX -- main */
 /* bordure top bloc recherche ville */
 .linear-gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#dadada)) no-repeat;
@@ -242,60 +301,14 @@ footer {
   text-align: center;
 }
 
-/*bloc fonctionnement du site */
-.section-fonctn {
-  margin-bottom: 50px;
-}
-
-.title-fonctn {
-  padding-left: 20px;
-}
-
-.bloc-fonctn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  background: #F2F2F2;
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 5px #dadada;
-          box-shadow: 5px 5px 5px #dadada;
-  width: 300px;
-  font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.bloc-fonctn:hover {
-  background: #f2eafb;
-}
-
-.bloc-fonctn:hover .store, .bloc-fonctn:hover .mobile, .bloc-fonctn:hover .list {
-  color: #9356DC;
-}
-
-/*bloc fiches restaurants */
-.section-restaurants {
-  background: #F2F2F2;
-  padding-bottom: 50px;
-  margin-bottom: 0px;
-}
-
-.title-section-restaurants {
-  padding-left: 20px;
-  padding-top: 20px;
-}
-
 /*--> FICHES RESTO x4 <--*/
+/* image d'accueil resto */
 .img-restaurants {
   width: 100%;
   height: auto;
 }
 
+/*nom du resto */
 .title-restaurants {
   background: #F2F2F2;
   border-radius: 30px 30px 0px 0px;
@@ -305,6 +318,12 @@ footer {
   position: relative;
 }
 
+/*icone favori : coeur */
+.heart-menu {
+  padding-left: 10px;
+}
+
+/*bloc liste des plats*/
 .section-menu {
   background: #F2F2F2;
   height: auto;
@@ -314,6 +333,7 @@ footer {
   padding-bottom: 50px;
 }
 
+/*titre catégorie de plat + soulignement*/
 .title-meal {
   padding-top: 20px;
   font-size: 1em;
@@ -326,16 +346,22 @@ footer {
   height: 3px;
 }
 
+/*FLEXBOX pour bloc plat et coche verte */
 .container-meal {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  white-space: nowrap;
 }
 
+/*bloc plat */
 .meal-menu {
   background: #FFFFFF;
   font-family: 'Roboto';
+  width: 100%;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 5px #dadada;
           box-shadow: 5px 5px 5px #dadada;
@@ -353,58 +379,43 @@ footer {
 
 .meal-menu:hover {
   border-radius: 10px 0px 0px 10px;
-  -webkit-animation-name: menu-check;
-          animation-name: menu-check;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  -webkit-animation-name: menu-reduce;
+          animation-name: menu-reduce;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
+.check-icons:hover {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation-name: check;
+          animation-name: check;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+}
+
+/* Background coche validation plat */
 .check-menu {
+  -webkit-box-shadow: 5px 5px 5px #dadada;
+          box-shadow: 5px 5px 5px #dadada;
   background-color: #99E2D0;
   color: #FFFFFF;
   border-radius: 0px 10px 10px 0px;
-  padding: 10px;
   height: 17px;
   width: 20px;
-  position: relative;
-  z-index: 3;
-  bottom: 35px;
-  right: -420px;
+  padding: 10px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  position: absolute;
+  right: 4%;
+  margin-top: 80px;
+  -webkit-transition: opacity 100ms transform 300ms 100ms linear;
+  transition: opacity 100ms transform 300ms 100ms linear;
 }
 
-.check-menu .check-icons:hover {
-  -webkit-box-shadow: 5px 5px 5px #dadada;
-          box-shadow: 5px 5px 5px #dadada;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
-  -webkit-transition: -webkit-transform 500ms linear;
-  transition: -webkit-transform 500ms linear;
-  transition: transform 500ms linear;
-  transition: transform 500ms linear, -webkit-transform 500ms linear;
-}
-
-@-webkit-keyframes menu-check {
-  0% {
-    margin-right: 20px;
-  }
-  100% {
-    margin-right: 40px;
-  }
-}
-
-@keyframes menu-check {
-  0% {
-    margin-right: 20px;
-  }
-  100% {
-    margin-right: 40px;
-  }
-}
-
+/*FLEXBOX titre plat et prix */
 .meal-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,6 +438,32 @@ footer {
   font-weight: bold;
 }
 
+/* A FAIRE arrivée menu au chargement de la page*/
+.entrees {
+  -webkit-animation-name: apparition-menu;
+          animation-name: apparition-menu;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+}
+
+.plats {
+  -webkit-animation: apparition-menu 700ms 400ms both ease-in-out;
+          animation: apparition-menu 700ms 400ms both ease-in-out;
+}
+
+.desserts {
+  -webkit-animation-name: apparition-menu;
+          animation-name: apparition-menu;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
 .logo-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,6 +478,46 @@ footer {
   height: auto;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.logo-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo-header .logo-img {
+  width: 150px;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* icone retour page menu x4*/
+.return {
+  padding-top: 5px;
+  padding-left: 50px;
+  position: absolute;
+  top: 10px;
+}
+
+.return:active {
+  color: #9356DC;
+}
+
+/*INDEX -- section-resto  */
+.section-restaurants {
+  background: #F2F2F2;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+}
+
+.title-section-restaurants {
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 figure a {
@@ -493,37 +570,15 @@ figcaption {
   text-decoration: none;
 }
 
-/*section fonctionnement : icones circle + texte */
-.nbr-circle {
-  background: #9356DC;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  text-align: center;
-  color: white;
-  font-family: 'Roboto';
-  left: -7px;
+/* icone coeur */
+.full-empty {
   position: relative;
-  font-weight: normal;
 }
 
-.mobile, .list, .store {
-  color: #818181;
-}
-
-.mobile, .list, .store {
-  padding: 20px;
-}
-
-/* icone favori : coeur : index*/
 .full-empty i {
   position: absolute;
   -webkit-transition: opacity 100ms;
   transition: opacity 100ms;
-}
-
-.full-empty {
-  position: relative;
 }
 
 .heart {
@@ -552,21 +607,62 @@ figcaption {
   color: #dadada;
 }
 
-/* icone retour page menu x4*/
-.return {
-  padding-top: 5px;
-  padding-left: 50px;
-  position: absolute;
-  top: 10px;
+/*section -> "fonctionnement" */
+.section-fonctn {
+  margin-bottom: 50px;
 }
 
-.return:active {
+.title-fonctn {
+  padding-left: 20px;
+}
+
+.bloc-fonctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background: #F2F2F2;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px #dadada;
+          box-shadow: 5px 5px 5px #dadada;
+  width: 300px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.bloc-fonctn:hover {
+  background: #f2eafb;
+}
+
+.bloc-fonctn:hover .store, .bloc-fonctn:hover .mobile, .bloc-fonctn:hover .list {
   color: #9356DC;
 }
 
-/*icone favori : coeur : page menu */
-.heart-menu {
-  padding-left: 10px;
+/* icones circle + texte */
+.nbr-circle {
+  background: #9356DC;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto';
+  left: -7px;
+  position: relative;
+  font-weight: normal;
+}
+
+.mobile, .list, .store {
+  color: #818181;
+}
+
+.mobile, .list, .store {
+  padding: 20px;
 }
 
 /*Main - formulaire recherche ville */
@@ -624,7 +720,6 @@ figcaption {
           box-shadow: 5px 5px 5px #000000;
 }
 
-/* mettre :hover qd passage desktop */
 footer {
   background: black;
   color: #FFFFFF;

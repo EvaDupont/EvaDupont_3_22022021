@@ -1,0 +1,27 @@
+/*INDEX -- main */
+
+/* bordure top bloc recherche ville */
+.linear-gradient 
+{
+    background: linear-gradient(to bottom, darken($color-block-form, 15%), $color-block-form) no-repeat ;
+    height: 7px;
+}
+
+/*bloc presentation du site*/
+.main-presentation 
+{
+    background: $color-block;
+    padding-bottom : 30px;
+    padding-top : 2px;
+}
+
+.title-main, .paragraph-main
+{
+    @include fontstyle-main;
+}
+
+
+
+
+    
+        
