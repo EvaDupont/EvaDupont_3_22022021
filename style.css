@@ -59,30 +59,6 @@ footer {
   left: 0px;
 }
 
-@-webkit-keyframes loading {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes loading {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 #indextoload {
   opacity: 1;
   -webkit-animation-name: pagetoload;

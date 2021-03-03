@@ -4,44 +4,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   // background-color: $color-white;
     position: absolute;
     width: 100vw;
     height: 100vh;
     top : 0px;
     left : 0px;
-    //animation-name: loading;
-    //animation-duration: 5s; 
-    //animation-fill-mode: both;
-}
-
-@keyframes loading 
-{
-    0% 
-    {
-    
-        opacity: 1; 
-    }
-    50% 
-    {
-      opacity: 0.9; 
-    }
-    100% 
-    {
-      
-        opacity: 0; 
-    }
 }
 
 #indextoload 
 {
-    //z-index: 3;
     opacity: 1;
     animation-name: pagetoload;
     animation-duration: 1s;
     animation-delay:  5s ;
-    animation-fill-mode:  both;
-    
+    animation-fill-mode:  both;  
 }
   
 @keyframes pagetoload 
