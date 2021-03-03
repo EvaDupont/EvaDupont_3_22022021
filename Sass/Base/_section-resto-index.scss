@@ -67,44 +67,6 @@ figcaption
     text-decoration: none;
 }
 
-/* icone coeur */
-
-.full-empty
-{
-    position: relative;
-}
-
-.full-empty i
-{
-    position: absolute;
-    transition: opacity 100ms;
-}
-
-.heart
-{
-    position: relative;
-    left : 250px;
-    top : -35px; 
-        &:hover
-        {
-            opacity : 0;
-            transform-origin: top;
-            transition-duration: 2s;
-        }
-        &.full
-        {
-            color: $color-primary;
-            background: -webkit-linear-gradient($color-primary, $color-secondary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;   
-        } 
-        
-        &.empty
-        {
-        background: $color-white; 
-        color : $color-block-form;
-        }
-}
 
 
 
