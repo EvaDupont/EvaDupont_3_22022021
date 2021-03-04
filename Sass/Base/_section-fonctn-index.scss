@@ -1,18 +1,6 @@
 /*section -> "fonctionnement" */
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width : 768px)
+@media screen and (max-width : 9000px) 
 {
-
     .section-fonctn 
     {
         margin-bottom: 50px;
@@ -23,6 +11,11 @@
         padding-left: 20px;
     }
 
+    .flex-fonctn
+    {
+        display: flex;
+        justify-content: space-between;
+    }
     .bloc-fonctn
     {
         display: flex;
@@ -72,4 +65,45 @@
         padding : 20px;
     }
 
+
+}
+@media screen and (max-width : 1000px)
+{
+    .bloc-fonctn
+    {
+        width : 250px;
+        margin-top: 20px;
+    }
+    .nbr-circle
+    {
+        left : 0px;
+    }
+    .mobile, .list, .store
+    {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width : 767px)
+{
+    .flex-fonctn
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloc-fonctn
+    {
+        width : 300Px;
+        margin-top: 0px;
+    }
+
+    .nbr-circle
+    {
+        left : -7px;
+    }
+    .mobile, .list, .store
+    {
+        padding : 20px;
+    }
 }

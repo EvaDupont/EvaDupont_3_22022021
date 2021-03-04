@@ -418,95 +418,102 @@ footer {
 }
 
 /*INDEX -- main */
-@media screen and (max-width: 768px) {
-  /* bordure top bloc recherche ville */
-  .linear-gradient {
-    background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#dadada)) no-repeat;
-    background: linear-gradient(to bottom, #b4b4b4, #dadada) no-repeat;
-    height: 7px;
-  }
-  /*bloc presentation du site*/
-  .main-presentation {
-    background: #F2F2F2;
-    padding-bottom: 30px;
-    padding-top: 2px;
-  }
-  .title-main {
-    text-align: center;
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-  .paragraph-main {
-    text-align: center;
-  }
+/* bordure top bloc recherche ville */
+.linear-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#dadada)) no-repeat;
+  background: linear-gradient(to bottom, #b4b4b4, #dadada) no-repeat;
+  height: 7px;
+}
+
+/*bloc presentation du site*/
+.main-presentation {
+  background: #F2F2F2;
+  padding-bottom: 30px;
+  padding-top: 2px;
+}
+
+.title-main {
+  text-align: center;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.paragraph-main {
+  text-align: center;
 }
 
 /*--> FICHES RESTO x4 <--*/
-@media screen and (max-width: 768px) {
-  .img-restaurants {
-    width: 100%;
-    height: auto;
-  }
-  /*nom du resto */
-  .title-restaurants {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background: #F2F2F2;
-    border-radius: 30px 30px 0px 0px;
-    padding-left: 20px;
-    padding-top: 10px;
-    margin-top: -50px;
-    position: relative;
-  }
-  /*bloc liste des plats*/
-  .section-menu {
-    background: #F2F2F2;
-    height: auto;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
-  }
-  /*titre catégorie de plat + soulignement*/
-  .title-meal {
-    padding-top: 20px;
-    font-size: 1em;
-    font-family: 'Roboto';
-  }
-  .underline-meal {
-    background: #99E2D0;
-    width: 40px;
-    height: 3px;
-  }
-  /*FLEXBOX plat + coche verte*/
-  .container-meal {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    white-space: nowrap;
-  }
-  /*FLEXBOX titre plat et prix */
-  .meal-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    white-space: nowrap;
-    padding-right: 10px;
-    min-width: 0;
-  }
-  .flex-price {
-    font-weight: bold;
-  }
+/* image d'accueil resto */
+.img-restaurants {
+  width: 100%;
+  height: auto;
+}
+
+/*nom du resto */
+.title-restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #F2F2F2;
+  border-radius: 30px 30px 0px 0px;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-top: -50px;
+  position: relative;
+}
+
+/*bloc liste des plats*/
+.section-menu {
+  background: #F2F2F2;
+  height: auto;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+/*titre catégorie de plat + soulignement*/
+.title-meal {
+  padding-top: 20px;
+  font-size: 1em;
+  font-family: 'Roboto';
+}
+
+.underline-meal {
+  background: #99E2D0;
+  width: 40px;
+  height: 3px;
+}
+
+/*FLEXBOX plat + coche verte*/
+.container-meal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  white-space: nowrap;
+}
+
+/*FLEXBOX titre plat et prix */
+.meal-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  white-space: nowrap;
+  padding-right: 10px;
+  min-width: 0;
+}
+
+.flex-price {
+  font-weight: bold;
 }
 
 .logo-header {
@@ -616,12 +623,20 @@ figcaption {
 }
 
 /*section -> "fonctionnement" */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 9000px) {
   .section-fonctn {
     margin-bottom: 50px;
   }
   .title-fonctn {
     padding-left: 20px;
+  }
+  .flex-fonctn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .bloc-fonctn {
     display: -webkit-box;
@@ -662,6 +677,41 @@ figcaption {
   }
   .mobile, .list, .store {
     color: #818181;
+  }
+  .mobile, .list, .store {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bloc-fonctn {
+    width: 250px;
+    margin-top: 20px;
+  }
+  .nbr-circle {
+    left: 0px;
+  }
+  .mobile, .list, .store {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flex-fonctn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bloc-fonctn {
+    width: 300Px;
+    margin-top: 0px;
+  }
+  .nbr-circle {
+    left: -7px;
   }
   .mobile, .list, .store {
     padding: 20px;
@@ -723,7 +773,7 @@ figcaption {
           box-shadow: 5px 5px 5px #000000;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 9000px) {
   footer {
     background: black;
     color: #FFFFFF;
