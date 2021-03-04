@@ -242,9 +242,21 @@ footer {
 }
 
 /* animation reduction bandeau des plats */
+.check-icons {
+  color: #F2F2F2;
+}
+
+.flex-title {
+  overflow: hidden;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .meal-menu {
   background: #FFFFFF;
   font-family: 'Roboto';
+  font-size: 0.7em;
   width: 100%;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 5px #dadada;
@@ -255,13 +267,18 @@ footer {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 0;
-  font-size: 0.7em;
   position: relative;
   z-index: 5;
+  cursor: pointer;
 }
 
 .meal-menu:hover {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  white-space: nowrap;
+  padding-right: 10px;
+  min-width: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-animation-name: menu-reduce;
@@ -285,14 +302,13 @@ footer {
   height: 17px;
   width: 20px;
   padding: 10px;
-  -webkit-transform-origin: right;
-          transform-origin: right;
   position: absolute;
-  right: 4%;
+  right: 11%;
   margin-top: 20px;
 }
 
 .meal-menu:hover + .check .check-icons {
+  color: #FFFFFF;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transform-origin: center;
@@ -314,7 +330,7 @@ footer {
   }
   100% {
     border-radius: 10px 0px 0px 10px;
-    margin-right: 40px;
+    margin-right: 55px;
   }
 }
 
@@ -325,7 +341,7 @@ footer {
   }
   100% {
     border-radius: 10px 0px 0px 10px;
-    margin-right: 40px;
+    margin-right: 55px;
   }
 }
 
@@ -480,13 +496,7 @@ footer {
           justify-content: space-between;
   white-space: nowrap;
   padding-right: 10px;
-}
-
-.flex-title {
-  overflow: hidden;
   min-width: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .flex-price {

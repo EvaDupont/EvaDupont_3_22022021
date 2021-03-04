@@ -45,11 +45,22 @@
 }
 
 /* animation reduction bandeau des plats */
-
+.check-icons
+{
+    color: $color-block;
+}
+.flex-title
+{
+    overflow: hidden;
+    min-width: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .meal-menu
 {
     background: $color-white;
     font-family: 'Roboto';
+    font-size: 0.7em; 
     width: 100%;
     border-radius: 10px;
     box-shadow: 5px 5px 5px $color-block-form;
@@ -59,12 +70,15 @@
     margin-top : 20px;
     margin-left: auto;
     margin-right: auto;
-    min-width:0;
-    font-size: 0.7em; 
     position: relative;
     z-index: 5;
+    cursor: pointer;
     &:hover
         {
+            justify-content: space-between;
+            white-space: nowrap;
+            padding-right: 10px;
+            min-width: 0;
             box-shadow: none;
             animation-name : menu-reduce;
             animation-duration: 700ms;
@@ -80,12 +94,12 @@
             height : 17px;
             width: 20px;
             padding : 10px;
-            transform-origin: right;
             position: absolute;
-            right : 4%;
+            right : 11%;
             margin-top: 20px;
                 .check-icons 
                 {
+                color: $color-white;
                 box-shadow: none;
                 transform-origin: center;
                 animation-name: check;
@@ -108,7 +122,7 @@
     100%
     {
         border-radius: 10px 0px 0px 10px;
-        margin-right: 40px;
+        margin-right: 55px;
     }
 }
 
@@ -116,12 +130,13 @@
 {
     0%
     {
-    transform :rotate(0deg)
+        transform :rotate(0deg)
     }
 
     100%
     {
-    transform : rotate(360deg)
+       
+        transform : rotate(360deg)
     }
 }
 
