@@ -87,20 +87,18 @@
             transition : all;
             +.check
             {
-            box-shadow: 5px 5px 5px $color-block-form;
             background-color: $color-tertiary;
             color: $color-white;
             border-radius: 0px 10px 10px 0px;
-            height : 17px;
+            height : 16px;
             width: 20px;
             padding : 10px;
             position: absolute;
-            right : 11%;
+            right : 6%;
             margin-top: 20px;
                 .check-icons 
                 {
                 color: $color-white;
-                box-shadow: none;
                 transform-origin: center;
                 animation-name: check;
                 animation-duration: 900ms; 
@@ -134,41 +132,37 @@
     }
 
     100%
-    {
-       
+    { 
         transform : rotate(360deg)
     }
 }
 
 /* arrivée progressive du menu au chargement de la page */
 
-/*.entrees 
+.entrees 
 {
+    transform: translateY(0);
     animation-name: apparition-menu;
     animation-duration: 700ms;
-    animation-fill-mode: both;
     animation-timing-function:  ease-in-out; 
-    animation-iteration-count: 1;
 }
 
 .plats 
 {
+    transform: translateY(0);
     animation-name: apparition-menu;
     animation-duration:  700ms; 
     animation-delay : 400ms; 
-    animation-fill-mode: both;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
 }
 
 .desserts 
 {
-  animation-name: apparition-menu;
-  animation-duration:  700ms; 
-  animation-delay : 800ms; 
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out; 
-  animation-iteration-count: 1;
+    transform: translateY(0);
+    animation-name: apparition-menu;
+    animation-duration:  700ms; 
+    animation-delay : 800ms; 
+    animation-timing-function: ease-in-out; 
 }
 
 @keyframes apparition-menu
@@ -183,6 +177,6 @@
     opacity: 1;
     transform: translateY(0); 
     } 
-}*/
+}
 
 

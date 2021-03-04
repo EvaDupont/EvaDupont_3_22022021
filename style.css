@@ -294,23 +294,19 @@ footer {
 }
 
 .meal-menu:hover + .check {
-  -webkit-box-shadow: 5px 5px 5px #dadada;
-          box-shadow: 5px 5px 5px #dadada;
   background-color: #99E2D0;
   color: #FFFFFF;
   border-radius: 0px 10px 10px 0px;
-  height: 17px;
+  height: 16px;
   width: 20px;
   padding: 10px;
   position: absolute;
-  right: 11%;
+  right: 6%;
   margin-top: 20px;
 }
 
 .meal-menu:hover + .check .check-icons {
   color: #FFFFFF;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-animation-name: check;
@@ -368,48 +364,69 @@ footer {
 }
 
 /* arrivée progressive du menu au chargement de la page */
-/*.entrees 
-{
-    animation-name: apparition-menu;
-    animation-duration: 700ms;
-    animation-fill-mode: both;
-    animation-timing-function:  ease-in-out; 
-    animation-iteration-count: 1;
+.entrees {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation-name: apparition-menu;
+          animation-name: apparition-menu;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
-.plats 
-{
-    animation-name: apparition-menu;
-    animation-duration:  700ms; 
-    animation-delay : 400ms; 
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+.plats {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation-name: apparition-menu;
+          animation-name: apparition-menu;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
-.desserts 
-{
-  animation-name: apparition-menu;
-  animation-duration:  700ms; 
-  animation-delay : 800ms; 
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out; 
-  animation-iteration-count: 1;
+.desserts {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation-name: apparition-menu;
+          animation-name: apparition-menu;
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
-@keyframes apparition-menu
-{
-    0% 
-    {
+@-webkit-keyframes apparition-menu {
+  0% {
     opacity: 0;
-    transform: translateY(15px); 
-    }
-    100% 
-    {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
     opacity: 1;
-    transform: translateY(0); 
-    } 
-}*/
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes apparition-menu {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 /*INDEX -- main */
 /* bordure top bloc recherche ville */
 .linear-gradient {
