@@ -1,27 +1,40 @@
 /*INDEX -- main */
 
-/* bordure top bloc recherche ville */
-.linear-gradient 
+
+
+
+
+
+
+
+@media screen and (max-width : 768px)
 {
-    background: linear-gradient(to bottom, darken($color-block-form, 15%), $color-block-form) no-repeat ;
-    height: 7px;
+    /* bordure top bloc recherche ville */
+    .linear-gradient 
+    {
+        background: linear-gradient(to bottom, darken($color-block-form, 15%), $color-block-form) no-repeat ;
+        height: 7px;
+    }
+
+    /*bloc presentation du site*/
+    .main-presentation 
+    {
+        background: $color-block;
+        padding-bottom : 30px;
+        padding-top : 2px;
+    }
+
+    .title-main 
+    {
+        @include fontstyle-main;
+        margin-right: 50px;
+        margin-left : 50px;
+    }
+
+    .paragraph-main
+    {
+        @include fontstyle-main;
+    }
 }
-
-/*bloc presentation du site*/
-.main-presentation 
-{
-    background: $color-block;
-    padding-bottom : 30px;
-    padding-top : 2px;
-}
-
-.title-main, .paragraph-main
-{
-    @include fontstyle-main;
-}
-
-
-
-
     
         

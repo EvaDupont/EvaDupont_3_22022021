@@ -1,60 +1,75 @@
 /*section -> "fonctionnement" */
-.section-fonctn 
-{
-    margin-bottom: 50px;
-}
 
-.title-fonctn
-{
-    padding-left: 20px;
-}
 
-.bloc-fonctn
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 768px)
 {
-    display: flex;
-    align-items: baseline;
-    background: $color-block;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px $color-block-form;
-    width : 300px;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    cursor: pointer;
-    &:hover
+
+    .section-fonctn 
     {
-        background: lighten($color-primary, 35%);
-            .store, .mobile, .list
-            {
-            color : $color-primary;
-            }
+        margin-bottom: 50px;
     }
+
+    .title-fonctn
+    {
+        padding-left: 20px;
+    }
+
+    .bloc-fonctn
+    {
+        display: flex;
+        align-items: baseline;
+        background: $color-block;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px $color-block-form;
+        width : 300px;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover
+        {
+            background: lighten($color-primary, 35%);
+                .store, .mobile, .list
+                {
+                color : $color-primary;
+                }
+        }
+    }
+
+    /* icones circle + texte */
+
+    .nbr-circle
+    {
+        background : $color-primary;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align : center;
+        color : white;
+        font-family: 'Roboto';
+        left : -7px;
+        position: relative;
+        font-weight: normal;
+    }
+
+    .mobile, .list, .store
+    {
+        color : darken($color-block-form, 35%);
+    }
+
+    .mobile, .list, .store
+    {
+        padding : 20px;
+    }
+
 }
-
-/* icones circle + texte */
-
-.nbr-circle
-{
-    background : $color-primary;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    text-align : center;
-    color : white;
-    font-family: 'Roboto';
-    left : -7px;
-    position: relative;
-    font-weight: normal;
-}
-
-.mobile, .list, .store
-{
-    color : darken($color-block-form, 35%);
-}
-
-.mobile, .list, .store
-{
-    padding : 20px;
-}
-

@@ -1,14 +1,4 @@
 @charset "UTF-8";
-/*
-
-1280px (desktop)
-1024 (ipad pro)
-768px (ipad)
-414px (code de référence)
-375px
-320px
-
-*/
 body {
   margin: 0px;
 }
@@ -428,96 +418,95 @@ footer {
 }
 
 /*INDEX -- main */
-/* bordure top bloc recherche ville */
-.linear-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#dadada)) no-repeat;
-  background: linear-gradient(to bottom, #b4b4b4, #dadada) no-repeat;
-  height: 7px;
-}
-
-/*bloc presentation du site*/
-.main-presentation {
-  background: #F2F2F2;
-  padding-bottom: 30px;
-  padding-top: 2px;
-}
-
-.title-main, .paragraph-main {
-  text-align: center;
+@media screen and (max-width: 768px) {
+  /* bordure top bloc recherche ville */
+  .linear-gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#b4b4b4), to(#dadada)) no-repeat;
+    background: linear-gradient(to bottom, #b4b4b4, #dadada) no-repeat;
+    height: 7px;
+  }
+  /*bloc presentation du site*/
+  .main-presentation {
+    background: #F2F2F2;
+    padding-bottom: 30px;
+    padding-top: 2px;
+  }
+  .title-main {
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .paragraph-main {
+    text-align: center;
+  }
 }
 
 /*--> FICHES RESTO x4 <--*/
-/* image d'accueil resto */
-.img-restaurants {
-  width: 100%;
-  height: auto;
-}
-
-/*nom du resto */
-.title-restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #F2F2F2;
-  border-radius: 30px 30px 0px 0px;
-  padding-left: 20px;
-  padding-top: 10px;
-  margin-top: -50px;
-  position: relative;
-}
-
-/*bloc liste des plats*/
-.section-menu {
-  background: #F2F2F2;
-  height: auto;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 50px;
-}
-
-/*titre catégorie de plat + soulignement*/
-.title-meal {
-  padding-top: 20px;
-  font-size: 1em;
-  font-family: 'Roboto';
-}
-
-.underline-meal {
-  background: #99E2D0;
-  width: 40px;
-  height: 3px;
-}
-
-/*FLEXBOX plat + coche verte*/
-.container-meal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  white-space: nowrap;
-}
-
-/*FLEXBOX titre plat et prix */
-.meal-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  white-space: nowrap;
-  padding-right: 10px;
-  min-width: 0;
-}
-
-.flex-price {
-  font-weight: bold;
+@media screen and (max-width: 768px) {
+  .img-restaurants {
+    width: 100%;
+    height: auto;
+  }
+  /*nom du resto */
+  .title-restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #F2F2F2;
+    border-radius: 30px 30px 0px 0px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: -50px;
+    position: relative;
+  }
+  /*bloc liste des plats*/
+  .section-menu {
+    background: #F2F2F2;
+    height: auto;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+  /*titre catégorie de plat + soulignement*/
+  .title-meal {
+    padding-top: 20px;
+    font-size: 1em;
+    font-family: 'Roboto';
+  }
+  .underline-meal {
+    background: #99E2D0;
+    width: 40px;
+    height: 3px;
+  }
+  /*FLEXBOX plat + coche verte*/
+  .container-meal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    white-space: nowrap;
+  }
+  /*FLEXBOX titre plat et prix */
+  .meal-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    white-space: nowrap;
+    padding-right: 10px;
+    min-width: 0;
+  }
+  .flex-price {
+    font-weight: bold;
+  }
 }
 
 .logo-header {
@@ -627,61 +616,56 @@ figcaption {
 }
 
 /*section -> "fonctionnement" */
-.section-fonctn {
-  margin-bottom: 50px;
-}
-
-.title-fonctn {
-  padding-left: 20px;
-}
-
-.bloc-fonctn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  background: #F2F2F2;
-  border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 5px #dadada;
-          box-shadow: 5px 5px 5px #dadada;
-  width: 300px;
-  font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.bloc-fonctn:hover {
-  background: #f2eafb;
-}
-
-.bloc-fonctn:hover .store, .bloc-fonctn:hover .mobile, .bloc-fonctn:hover .list {
-  color: #9356DC;
-}
-
-/* icones circle + texte */
-.nbr-circle {
-  background: #9356DC;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  text-align: center;
-  color: white;
-  font-family: 'Roboto';
-  left: -7px;
-  position: relative;
-  font-weight: normal;
-}
-
-.mobile, .list, .store {
-  color: #818181;
-}
-
-.mobile, .list, .store {
-  padding: 20px;
+@media screen and (max-width: 768px) {
+  .section-fonctn {
+    margin-bottom: 50px;
+  }
+  .title-fonctn {
+    padding-left: 20px;
+  }
+  .bloc-fonctn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    background: #F2F2F2;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 5px #dadada;
+            box-shadow: 5px 5px 5px #dadada;
+    width: 300px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .bloc-fonctn:hover {
+    background: #f2eafb;
+  }
+  .bloc-fonctn:hover .store, .bloc-fonctn:hover .mobile, .bloc-fonctn:hover .list {
+    color: #9356DC;
+  }
+  /* icones circle + texte */
+  .nbr-circle {
+    background: #9356DC;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+    left: -7px;
+    position: relative;
+    font-weight: normal;
+  }
+  .mobile, .list, .store {
+    color: #818181;
+  }
+  .mobile, .list, .store {
+    padding: 20px;
+  }
 }
 
 /*Main - formulaire recherche ville */
@@ -739,42 +723,57 @@ figcaption {
           box-shadow: 5px 5px 5px #000000;
 }
 
-footer {
-  background: black;
-  color: #FFFFFF;
-  font-size: 0.8em;
+@media screen and (max-width: 1700px) {
+  footer {
+    background: black;
+    color: #FFFFFF;
+    font-size: 0.8em;
+  }
+  .flex-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .logo-footer {
+    width: 90px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+  }
+  footer ul {
+    list-style: none;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  footer li {
+    line-height: 1.8em;
+  }
+  .ustensils {
+    padding-right: 10px;
+  }
+  .partners {
+    padding-right: 5px;
+  }
+  li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
 }
 
-.logo-footer {
-  width: 90px;
-  height: auto;
-  padding-top: 20px;
-  padding-left: 20px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-
-footer ul {
-  list-style: none;
-  padding-bottom: 20px;
-  padding-left: 20px;
-}
-
-footer li {
-  line-height: 1.8em;
-}
-
-.ustensils {
-  padding-right: 10px;
-}
-
-.partners {
-  padding-right: 5px;
-}
-
-li a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
+@media screen and (max-width: 767px) {
+  .flex-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

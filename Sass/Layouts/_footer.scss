@@ -1,44 +1,66 @@
-footer
+@media screen and (max-width : 1700px)
 {
-    background:black;
-    color: $color-white;
-    font-size: 0.8em;
+    footer
+    {
+        background:black;
+        color: $color-white;
+        font-size: 0.8em;
+    }
+
+    .flex-footer
+    {
+        display: flex;
+        justify-content: space-between;
+        padding-left : 20px;
+        padding-right : 20px;
+    }
+
+    .logo-footer
+    {
+        width: 90px;
+        height: auto;
+        padding-top: 20px;
+        padding-left: 20px;
+        filter: invert(100%);
+    }
+
+    footer ul
+    {
+        list-style: none;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    footer li
+    {
+        line-height: 1.8em;
+        
+    }
+    .ustensils
+    {
+        padding-right: 10px;
+    }
+
+    .partners
+    {
+        padding-right : 5px;
+    }
+
+    li a
+    {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
 }
 
-.logo-footer
+@media screen and (max-width : 767px)
 {
-    width: 90px;
-    height: auto;
-    padding-top: 20px;
-    padding-left: 20px;
-    filter: invert(100%);
-}
 
-footer ul
-{
-    list-style: none;
-    padding-bottom: 20px;
-    padding-left: 20px;
-}
-
-footer li
-{
-    line-height: 1.8em;
+    .flex-footer
+    {
+        flex-direction: column;
+    }
     
 }
-.ustensils
-{
-    padding-right: 10px;
-}
 
-.partners
-{
-    padding-right : 5px;
-}
-
-li a
-{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}

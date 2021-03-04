@@ -1,73 +1,76 @@
 /*--> FICHES RESTO x4 <--*/
 
+
+
+@media screen and (max-width : 768px)
 /* image d'accueil resto */
-.img-restaurants
 {
-    width: 100%;
-    height: auto;
+    .img-restaurants
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    /*nom du resto */
+    .title-restaurants
+    {
+        display: flex;
+        justify-content: space-between;
+        background: $color-block;
+        border-radius: 30px 30px 0px 0px;
+        padding-left :  20px;
+        padding-top: 10px;
+        margin-top : -50px;
+        position: relative;
+    }
+
+    /*bloc liste des plats*/
+    .section-menu
+    {
+        background: $color-block;
+        height: auto;
+        padding-top : 10px;
+        padding-left : 20px;
+        padding-right: 20px;
+        padding-bottom: 50px; 
+    }
+
+    /*titre catégorie de plat + soulignement*/
+    .title-meal 
+    {
+        padding-top: 20px;
+        font-size: 1em;
+        font-family: 'Roboto';
+    }
+    .underline-meal
+    {
+        background: $color-tertiary;
+        width : 40px;
+        height: 3px;
+    }
+
+    /*FLEXBOX plat + coche verte*/
+
+    .container-meal
+    {
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+
+    /*FLEXBOX titre plat et prix */
+    .meal-flex
+    {
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+        padding-right: 10px;
+        min-width: 0;
+    }     
+
+    .flex-price
+    {
+        font-weight: bold;
+        
+    }
 }
-
-/*nom du resto */
-.title-restaurants
-{
-    display: flex;
-    justify-content: space-between;
-    background: $color-block;
-    border-radius: 30px 30px 0px 0px;
-    padding-left :  20px;
-    padding-top: 10px;
-    margin-top : -50px;
-    position: relative;
-}
-
-/*bloc liste des plats*/
-.section-menu
-{
-    background: $color-block;
-    height: auto;
-    padding-top : 10px;
-    padding-left : 20px;
-    padding-right: 20px;
-    padding-bottom: 50px; 
-}
-
-/*titre catégorie de plat + soulignement*/
-.title-meal 
-{
-    padding-top: 20px;
-    font-size: 1em;
-    font-family: 'Roboto';
-}
-.underline-meal
-{
-    background: $color-tertiary;
-    width : 40px;
-    height: 3px;
-}
-
-/*FLEXBOX plat + coche verte*/
-
-.container-meal
-{
-    display: flex;
-    justify-content: space-between;
-    white-space: nowrap;
-}
-
-/*FLEXBOX titre plat et prix */
-.meal-flex
-{
-    display: flex;
-    justify-content: space-between;
-    white-space: nowrap;
-    padding-right: 10px;
-    min-width: 0;
-
-}     
-
-.flex-price
-{
-    font-weight: bold;
-    
-}
-
