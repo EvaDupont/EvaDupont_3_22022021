@@ -262,7 +262,7 @@ footer {
   cursor: pointer;
 }
 
-.meal-menu:hover {
+.meal-menu:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -283,7 +283,7 @@ footer {
   transition: all;
 }
 
-.meal-menu:hover + .check {
+.meal-menu:active + .check {
   background-color: #99E2D0;
   color: #FFFFFF;
   border-radius: 0px 10px 10px 0px;
@@ -295,7 +295,7 @@ footer {
   margin-top: 20px;
 }
 
-.meal-menu:hover + .check .check-icons {
+.meal-menu:active + .check .check-icons {
   color: #FFFFFF;
   -webkit-transform-origin: center;
           transform-origin: center;
@@ -434,8 +434,8 @@ footer {
 
 .title-main {
   text-align: center;
-  margin-right: 50px;
-  margin-left: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .paragraph-main {
@@ -561,65 +561,84 @@ footer {
 }
 
 /*INDEX -- section-resto  */
-.section-restaurants {
-  background: #F2F2F2;
-  padding-bottom: 50px;
-  margin-bottom: 0px;
+@media screen and (max-width: 9000px) {
+  .section-restaurants {
+    background: #F2F2F2;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+  }
+  .title-section-restaurants {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .flex-restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  figure a {
+    cursor: pointer;
+    color: #000000;
+  }
+  figure {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-box-shadow: 5px 5px 5px #dadada;
+            box-shadow: 5px 5px 5px #dadada;
+    background: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+  }
+  .new {
+    background: #99E2D0;
+    border-radius: 2px;
+    color: #278870;
+    font-weight: bold;
+    text-align: center;
+    width: 80px;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  figure img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+  }
+  figcaption {
+    width: 280px;
+    height: 40px;
+    border-radius: 0px 0px 20px 20px;
+    background: #FFFFFF;
+    padding: 10px;
+    margin-top: -5px;
+    position: absolute;
+    color: #000000;
+    text-decoration: none;
+  }
 }
 
-.title-section-restaurants {
-  padding-left: 20px;
-  padding-top: 20px;
-}
-
-figure a {
-  cursor: pointer;
-  color: #000000;
-}
-
-figure {
-  width: 300px;
-  height: 250px;
-  border-radius: 20px 20px 20px 20px;
-  -webkit-box-shadow: 5px 5px 5px #dadada;
-          box-shadow: 5px 5px 5px #dadada;
-  background: #FFFFFF;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  position: relative;
-}
-
-.new {
-  background: #99E2D0;
-  border-radius: 2px;
-  color: #278870;
-  font-weight: bold;
-  text-align: center;
-  width: 80px;
-  padding: 5px;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-figure img {
-  width: 300px;
-  height: auto;
-  border-radius: 20px 20px 0px 0px;
-}
-
-figcaption {
-  width: 280px;
-  height: 40px;
-  border-radius: 0px 0px 20px 20px;
-  background: #FFFFFF;
-  padding: 10px;
-  margin-top: -5px;
-  position: absolute;
-  color: #000000;
-  text-decoration: none;
+@media screen and (max-width: 767px) {
+  .flex-restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /*section -> "fonctionnement" */
@@ -686,7 +705,6 @@ figcaption {
 @media screen and (max-width: 1000px) {
   .bloc-fonctn {
     width: 250px;
-    margin-top: 20px;
   }
   .nbr-circle {
     left: 0px;
@@ -708,7 +726,6 @@ figcaption {
   }
   .bloc-fonctn {
     width: 300Px;
-    margin-top: 0px;
   }
   .nbr-circle {
     left: -7px;

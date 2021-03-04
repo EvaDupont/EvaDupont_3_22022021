@@ -73,7 +73,7 @@
     position: relative;
     z-index: 5;
     cursor: pointer;
-    &:hover
+    &:active
         {
             justify-content: space-between;
             white-space: nowrap;
