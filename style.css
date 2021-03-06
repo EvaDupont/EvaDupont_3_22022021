@@ -6,11 +6,7 @@ body {
 h1 {
   font-family: "Shrikhand";
   font-size: 1.6em;
-}
-
-h1.title-menu {
-  margin-bottom: 0px;
-  position: relative;
+  padding-top: 10px;
 }
 
 h2 {
@@ -190,7 +186,7 @@ footer {
 }
 
 /* animation icone coeur à remplir */
-.full-empty, .full-empties {
+.full-empty {
   position: relative;
 }
 
@@ -204,6 +200,7 @@ footer {
   position: relative;
   left: 250px;
   top: -35px;
+  cursor: pointer;
 }
 
 .heart:hover {
@@ -231,189 +228,272 @@ footer {
   color: #dadada;
 }
 
-/* animation reduction bandeau des plats */
-.check-icons {
-  color: #F2F2F2;
-}
-
-.flex-title {
-  overflow: hidden;
-  min-width: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.meal-menu {
-  background: #FFFFFF;
-  font-family: 'Roboto';
-  font-size: 0.7em;
-  width: 100%;
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 5px #dadada;
-          box-shadow: 5px 5px 5px #dadada;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 5;
-  cursor: pointer;
-}
-
-.meal-menu:hover {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  white-space: nowrap;
-  padding-right: 10px;
-  min-width: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-animation-name: menu-reduce;
-          animation-name: menu-reduce;
-  -webkit-animation-duration: 700ms;
-          animation-duration: 700ms;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-transition: all;
-  transition: all;
-}
-
-.meal-menu:hover + .check {
-  background-color: #99E2D0;
-  color: #FFFFFF;
-  border-radius: 0px 10px 10px 0px;
-  height: 16px;
-  width: 20px;
-  padding: 10px;
-  position: absolute;
-  right: 6%;
-  margin-top: 20px;
-}
-
-.meal-menu:hover + .check .check-icons {
-  color: #FFFFFF;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-animation-name: check;
-          animation-name: check;
-  -webkit-animation-duration: 900ms;
-          animation-duration: 900ms;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-
-@-webkit-keyframes menu-reduce {
-  0% {
+/*ANIMATIONS PAGES RESTAURANTS */
+@media screen and (max-width: 9000px) {
+  .check-icons {
+    color: #F2F2F2;
+  }
+  .flex-title {
+    overflow: hidden;
+    min-width: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .meal-menu {
+    background: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 1em;
+    width: 350px;
     border-radius: 10px;
-    margin-right: 5px;
+    -webkit-box-shadow: 5px 5px 5px #dadada;
+            box-shadow: 5px 5px 5px #dadada;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    cursor: pointer;
   }
-  100% {
-    border-radius: 10px 0px 0px 10px;
-    margin-right: 55px;
+  .meal-menu:hover {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    white-space: nowrap;
+    padding-right: 10px;
+    min-width: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-animation-name: menu-reduce;
+            animation-name: menu-reduce;
+    -webkit-animation-duration: 700ms;
+            animation-duration: 700ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-transition: all;
+    transition: all;
   }
-}
-
-@keyframes menu-reduce {
-  0% {
-    border-radius: 10px;
-    margin-right: 5px;
+  .meal-menu:hover + .check {
+    background-color: #99E2D0;
+    color: #FFFFFF;
+    border-radius: 0px 10px 10px 0px;
+    height: 39px;
+    width: 30px;
+    padding: 15px;
+    position: relative;
+    right: 40Px;
+    top: 30px;
+    margin-top: 20px;
   }
-  100% {
-    border-radius: 10px 0px 0px 10px;
-    margin-right: 55px;
+  .meal-menu:hover + .check .check-icons {
+    color: #FFFFFF;
+    padding: 10px;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-animation-name: check;
+            animation-name: check;
+    -webkit-animation-duration: 900ms;
+            animation-duration: 900ms;
+    -webkit-animation-delay: 500ms;
+            animation-delay: 500ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
   }
-}
-
-@-webkit-keyframes check {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+  /*a remodifier pour la version tablette et mobile */
+  @-webkit-keyframes menu-reduce {
+    0% {
+      border-radius: 10px;
+      right: 0px;
+    }
+    100% {
+      border-radius: 10px 0px 0px 10px;
+      right: 30px;
+    }
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  @keyframes menu-reduce {
+    0% {
+      border-radius: 10px;
+      right: 0px;
+    }
+    100% {
+      border-radius: 10px 0px 0px 10px;
+      right: 30px;
+    }
   }
-}
-
-@keyframes check {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+  @-webkit-keyframes check {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  @keyframes check {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
   }
-}
-
-/* arrivée progressive du menu au chargement de la page */
-.entrees {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-animation-name: apparition-menu;
-          animation-name: apparition-menu;
-  -webkit-animation-duration: 700ms;
-          animation-duration: 700ms;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-.plats {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-animation-name: apparition-menu;
-          animation-name: apparition-menu;
-  -webkit-animation-duration: 700ms;
-          animation-duration: 700ms;
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-.desserts {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-animation-name: apparition-menu;
-          animation-name: apparition-menu;
-  -webkit-animation-duration: 700ms;
-          animation-duration: 700ms;
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-@-webkit-keyframes apparition-menu {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
-  }
-  100% {
-    opacity: 1;
+  .entrees {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-animation-name: apparition-menu;
+            animation-name: apparition-menu;
+    -webkit-animation-duration: 700ms;
+            animation-duration: 700ms;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  .plats {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-name: apparition-menu;
+            animation-name: apparition-menu;
+    -webkit-animation-duration: 700ms;
+            animation-duration: 700ms;
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  .desserts {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-animation-name: apparition-menu;
+            animation-name: apparition-menu;
+    -webkit-animation-duration: 700ms;
+            animation-duration: 700ms;
+    -webkit-animation-delay: 800ms;
+            animation-delay: 800ms;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  @-webkit-keyframes apparition-menu {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(15px);
+              transform: translateY(15px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes apparition-menu {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(15px);
+              transform: translateY(15px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
   }
 }
 
-@keyframes apparition-menu {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+@media screen and (max-width: 1000px) {
+  .meal-menu {
+    font-size: 0.9em;
   }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+}
+
+@media screen and (max-width: 767px) {
+  .meal-menu {
+    background: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 0.7em;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 5px #dadada;
+            box-shadow: 5px 5px 5px #dadada;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+  }
+  .meal-menu:hover {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    white-space: nowrap;
+    padding-right: 10px;
+    min-width: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-animation-name: menu-reduce;
+            animation-name: menu-reduce;
+    -webkit-animation-duration: 700ms;
+            animation-duration: 700ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-transition: all;
+    transition: all;
+  }
+  .meal-menu:hover + .check {
+    background-color: #99E2D0;
+    color: #FFFFFF;
+    border-radius: 0px 10px 10px 0px;
+    height: 16px;
+    width: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 6%;
+    margin-top: 20px;
+  }
+  .meal-menu:hover + .check .check-icons {
+    color: #FFFFFF;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-animation-name: check;
+            animation-name: check;
+    -webkit-animation-duration: 900ms;
+            animation-duration: 900ms;
+    -webkit-animation-delay: 500ms;
+            animation-delay: 500ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+  @-webkit-keyframes menu-reduce {
+    0% {
+      border-radius: 10px;
+      margin-right: 5px;
+    }
+    100% {
+      border-radius: 10px 0px 0px 10px;
+      margin-right: 55px;
+    }
+  }
+  @keyframes menu-reduce {
+    0% {
+      border-radius: 10px;
+      margin-right: 5px;
+    }
+    100% {
+      border-radius: 10px 0px 0px 10px;
+      margin-right: 55px;
+    }
   }
 }
 
@@ -443,77 +523,125 @@ footer {
 }
 
 /*--> FICHES RESTO x4 <--*/
-/* image d'accueil resto */
-.img-restaurants {
-  width: 100%;
-  height: auto;
+@media screen and (max-width: 9000px) {
+  /* image d'accueil resto */
+  .img-restaurants {
+    width: 100%;
+    height: auto;
+  }
+  /*bloc nom resto + liste des plats*/
+  .section-menu {
+    border-radius: 30px 30px 0px 0px;
+    background: #F2F2F2;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    margin-top: -250px;
+    position: relative;
+  }
+  .title-menu {
+    font-size: 2em;
+  }
+  .full-empties {
+    position: relative;
+    left: 80px;
+    top: -5px;
+  }
+  /*titre catégorie de plat + soulignement*/
+  .title-meal {
+    padding-top: 20px;
+    font-size: 1.4em;
+    font-family: 'Roboto';
+  }
+  .underline-meal {
+    background: #99E2D0;
+    width: 40px;
+    height: 3px;
+  }
+  /*FLEXBOX plat + coche verte*/
+  .container-meal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 20px;
+  }
+  /*FLEXBOX titre plat et prix */
+  .meal-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    white-space: nowrap;
+    padding-right: 10px;
+    min-width: 0;
+  }
+  .flex-price {
+    font-weight: bold;
+  }
+  .entrees-block, .plats-block, .desserts-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-/*nom du resto */
-.title-restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #F2F2F2;
-  border-radius: 30px 30px 0px 0px;
-  padding-left: 20px;
-  padding-top: 10px;
-  margin-top: -50px;
-  position: relative;
+@media screen and (max-width: 1000px) {
+  .section-menu {
+    position: relative;
+    margin-top: -100px;
+  }
+  .title-menu {
+    font-size: 1.8em;
+  }
+  .full-empties {
+    position: relative;
+    left: 50px;
+    top: -2px;
+  }
+  .title-meal {
+    font-size: 1.2em;
+  }
 }
 
-/*bloc liste des plats*/
-.section-menu {
-  background: #F2F2F2;
-  height: auto;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 50px;
-}
-
-/*titre catégorie de plat + soulignement*/
-.title-meal {
-  padding-top: 20px;
-  font-size: 1em;
-  font-family: 'Roboto';
-}
-
-.underline-meal {
-  background: #99E2D0;
-  width: 40px;
-  height: 3px;
-}
-
-/*FLEXBOX plat + coche verte*/
-.container-meal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  white-space: nowrap;
-}
-
-/*FLEXBOX titre plat et prix */
-.meal-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  white-space: nowrap;
-  padding-right: 10px;
-  min-width: 0;
-}
-
-.flex-price {
-  font-weight: bold;
+@media screen and (max-width: 767px) {
+  .section-menu {
+    position: relative;
+    margin-top: -50px;
+  }
+  .title-menu {
+    font-size: 1.6em;
+  }
+  .full-empties {
+    position: relative;
+    left: 15px;
+    top: 5px;
+  }
+  .title-meal {
+    font-size: 1em;
+  }
+  .entrees-block, .plats-block, .desserts-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .logo-header {
@@ -536,6 +664,37 @@ footer {
   .page-resto {
     position: absolute;
     width: 100%;
+    height: 120px;
+    z-index: 6;
+    background-color: #FFFFFF;
+  }
+  .logo-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logo-header .logo-img {
+    width: 300px;
+    height: auto;
+    margin-top: 30px;
+  }
+  .return {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .return:active {
+    color: #9356DC;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .page-resto {
+    position: absolute;
+    width: 100%;
     height: 80px;
     z-index: 6;
     background-color: #FFFFFF;
@@ -549,35 +708,9 @@ footer {
             justify-content: center;
   }
   .logo-header .logo-img {
-    width: 250px;
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .return {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-  }
-  .return:active {
-    color: #9356DC;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .logo-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .logo-header .logo-img {
     width: 200px;
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 5px;
   }
   .return {
     position: absolute;
@@ -593,7 +726,7 @@ footer {
   .page-resto {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 46px;
     background-color: #FFFFFF;
   }
   .logo-header {
