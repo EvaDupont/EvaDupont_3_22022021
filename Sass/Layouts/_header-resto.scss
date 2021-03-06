@@ -1,27 +1,113 @@
-.logo-header
+@media screen and (max-width : 9000px) /* version Bureau */
 {
-    display: flex;
-    justify-content: center;
-        .logo-img 
-        {
-            width: 150px;
-            height: auto; 
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-        
-}
+    .page-resto
+    {
+        position : absolute;
+        width: 100%;
+        height : 80px;
+        z-index: 6;
+        background-color: $color-white;
+    }
 
-/* icone retour page menu x4*/
-.return
-{
-    padding-top : 5px;
-    padding-left : 50px;
-    position : absolute;
-    top : 10px;
+    .logo-header
+    {
+        display: flex;
+        justify-content: center;
+            .logo-img 
+            {
+                width: 250px;
+                height: auto; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }      
+    }
+
+    .return
+    {
+        position: absolute;
+        top: 30px;
+        left : 30px;
     &:active
         {
             color: $color-primary ;
         }
     
+    }
+
 }
+
+@media screen and (max-width : 1000px)
+{
+    .logo-header
+    {
+        display: flex;
+        justify-content: center;
+            .logo-img 
+            {
+                width: 200px;
+                height: auto; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }      
+    }
+
+    .return
+    {
+        
+        position : absolute;
+        top : 20px;
+        left :20px;
+        &:active
+            {
+                color: $color-primary ;
+            }
+    }
+
+}
+
+
+
+@media screen and (max-width : 767px)
+{
+
+    .page-resto
+    {
+        position : absolute;
+        width: 100%;
+        height : auto;
+        background-color: $color-white;
+    }
+
+    .logo-header
+    {
+        display: flex;
+        justify-content: center;  
+            .logo-img 
+            {
+                width: 150px;
+                height: auto; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            
+    }
+
+    /* icone retour page menu x4*/
+    .return
+    {
+        
+        position : absolute;
+        top : 15px;
+        left :15px;
+        &:active
+            {
+                color: $color-primary ;
+            }
+    }
+
+}
+
+
+
+
+
