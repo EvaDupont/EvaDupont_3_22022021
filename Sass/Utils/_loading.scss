@@ -16,7 +16,7 @@
     opacity: 1;
     animation-name: pagetoload;
     animation-duration: 1s;
-    animation-delay:  5s ;
+    animation-delay:  3s ;
     animation-fill-mode:  both;  
 }
   
@@ -42,7 +42,7 @@
             color: $color-white;
             animation-name: loading-spinner;
             margin: 0px;
-            animation-duration:  5s;
+            animation-duration:  3s;
             animation-timing-function: linear; 
             animation-fill-mode: both;
         }
@@ -83,7 +83,7 @@
             font-size: 0.7em;
             margin : 0px;
             animation-name: loading-text;
-            animation-duration: 5s;
+            animation-duration: 3s;
             animation-timing-function: linear;
             animation-fill-mode: both;
         } 

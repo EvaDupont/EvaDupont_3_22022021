@@ -51,8 +51,8 @@ footer {
           animation-name: pagetoload;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -87,8 +87,8 @@ footer {
   -webkit-animation-name: loading-spinner;
           animation-name: loading-spinner;
   margin: 0px;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: both;
@@ -151,8 +151,8 @@ footer {
   margin: 0px;
   -webkit-animation-name: loading-text;
           animation-name: loading-text;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: both;
@@ -243,7 +243,7 @@ footer {
     background: #FFFFFF;
     font-family: 'Roboto';
     font-size: 1em;
-    width: 350px;
+    width: 340px;
     border-radius: 10px;
     -webkit-box-shadow: 5px 5px 5px #dadada;
             box-shadow: 5px 5px 5px #dadada;
@@ -591,6 +591,20 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .entrees-block1, .flex-block1, .flex-block2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -994,15 +1008,15 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding-left: 20px;
     padding-right: 20px;
   }
   .logo-footer {
-    width: 90px;
+    width: 130px;
     height: auto;
+    margin-left: 40%;
     padding-top: 20px;
     padding-left: 20px;
     -webkit-filter: invert(100%);
@@ -1035,6 +1049,15 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .logo-footer {
+    width: 90px;
+    height: auto;
+    margin-left: 0%;
+    padding-top: 20px;
+    padding-left: 20px;
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
   }
 }
 /*# sourceMappingURL=style.css.map */

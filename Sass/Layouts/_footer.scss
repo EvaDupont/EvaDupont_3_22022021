@@ -10,15 +10,16 @@
     .flex-footer
     {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-left : 20px;
         padding-right : 20px;
     }
 
     .logo-footer
     {
-        width: 90px;
+        width: 130px;
         height: auto;
+        margin-left: 40%;
         padding-top: 20px;
         padding-left: 20px;
         filter: invert(100%);
@@ -60,6 +61,15 @@
     .flex-footer
     {
         flex-direction: column;
+    }
+    .logo-footer
+    {
+        width: 90px;
+        height: auto;
+        margin-left: 0%;
+        padding-top: 20px;
+        padding-left: 20px;
+        filter: invert(100%);
     }
     
 }

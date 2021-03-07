@@ -77,6 +77,14 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .entrees-block1, .flex-block1, .flex-block2
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (max-width : 1000px) /*version tablette*/
