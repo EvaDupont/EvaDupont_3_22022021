@@ -546,15 +546,31 @@ footer {
     margin-top: -250px;
     position: relative;
   }
+  .title-restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .full-empties {
+    font-size: 2em;
+    position: relative;
+    top: 10px;
+    right: 300px;
+  }
   .title-menu {
     font-size: 2em;
     padding-left: 20px;
     padding-top: 15px;
-  }
-  .full-empties {
-    position: relative;
-    left: 80px;
-    top: -5px;
   }
   /*titre catégorie de plat + soulignement*/
   .title-meal {
@@ -647,13 +663,8 @@ footer {
     position: relative;
     margin-top: -100px;
   }
-  .title-menu {
+  .title-menu, .full-empties {
     font-size: 1.8em;
-  }
-  .full-empties {
-    position: relative;
-    left: 50px;
-    top: -2px;
   }
   .title-meal {
     font-size: 1.2em;
@@ -668,20 +679,15 @@ footer {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .title-menu {
+  .title-menu, .full-empties {
     font-size: 1.6em;
-    padding-left: 20px;
-  }
-  .full-empties {
-    position: relative;
-    left: 2px;
-    top: 5px;
   }
   .title-meal {
     font-size: 1em;
   }
   .container-meal {
     margin-left: 5px;
+    padding-left: 20px;
   }
 }
 

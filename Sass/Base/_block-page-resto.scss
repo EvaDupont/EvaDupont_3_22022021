@@ -21,18 +21,27 @@
         position: relative;
     }
 
+    .title-restaurants
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    .full-empties
+    {
+        font-size: 2em;
+        position: relative;
+        top : 10px;
+        right : 300px;
+    }
+
     .title-menu
     {
         font-size: 2em ;
         padding-left: 20px;
         padding-top: 15px;
-    }
-
-    .full-empties
-    {
-        position: relative;
-        left : 80px;
-        top : -5px;
     }
 
     /*titre catégorie de plat + soulignement*/
@@ -108,7 +117,6 @@
         animation-timing-function: ease-in-out; 
     }
 
- 
 }
 
 @media screen and (max-width : 1000px) /*version tablette*/
@@ -120,16 +128,9 @@
         margin-top :-100px;
     }
 
-    .title-menu
+    .title-menu, .full-empties
     {
         font-size: 1.8em ;
-    }
-
-    .full-empties
-    {
-        position: relative;
-        left : 50px;
-        top : -2px;
     }
 
     .title-meal 
@@ -151,17 +152,9 @@
         padding-left: 0px;
     }
 
-    .title-menu
+    .title-menu, .full-empties
     {
         font-size: 1.6em ;
-        padding-left: 20px;
-    }
-
-    .full-empties
-    {
-        position: relative;
-        left : 2px;
-        top : 5px;
     }
 
     .title-meal 
@@ -173,7 +166,7 @@
     {
     
         margin-left: 5px;
-       
+        padding-left: 20px;
     }
 
 }
