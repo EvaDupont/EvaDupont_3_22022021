@@ -340,7 +340,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1281px) {
   .meal-menu {
     font-size: 1em;
   }
@@ -359,14 +359,39 @@ footer {
   .meal-menu:hover + .check {
     height: 30px;
     width: 30px;
+    left: -100px;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .meal-menu {
+    font-size: 0.9em;
+  }
+  .meal-menu:hover {
+    -webkit-animation-name: menu-reduceDMini;
+            animation-name: menu-reduceDMini;
+    -webkit-animation-duration: 700ms;
+            animation-duration: 700ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-transition: all;
+    transition: all;
+  }
+  .meal-menu:hover + .check {
+    height: 30px;
+    width: 30px;
     left: -80px;
     top: 10px;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .meal-menu {
-    font-size: 0.9em;
+    font-size: 0.7em;
+    height: 25px;
   }
   .meal-menu:hover {
     -webkit-animation-name: menu-reduceT;
@@ -381,10 +406,15 @@ footer {
     transition: all;
   }
   .meal-menu:hover + .check {
-    height: 30px;
-    width: 30px;
+    height: 15px;
+    width: 20px;
     left: -55px;
     top: 10px;
+  }
+  .meal-menu:hover + .check .check-icons {
+    position: absolute;
+    top: 8px;
+    right: 10px;
   }
 }
 
@@ -447,11 +477,33 @@ footer {
   }
   100% {
     border-radius: 10px 0px 0px 10px;
-    margin-right: 80px;
+    margin-right: 100px;
   }
 }
 
 @keyframes menu-reduceD {
+  0% {
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+  100% {
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 100px;
+  }
+}
+
+@-webkit-keyframes menu-reduceDMini {
+  0% {
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+  100% {
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 80px;
+  }
+}
+
+@keyframes menu-reduceDMini {
   0% {
     border-radius: 10px;
     margin-right: 5px;
@@ -469,7 +521,7 @@ footer {
   }
   100% {
     border-radius: 10px 0px 0px 10px;
-    margin-right: 55px;
+    margin-right: 50px;
   }
 }
 
@@ -480,7 +532,7 @@ footer {
   }
   100% {
     border-radius: 10px 0px 0px 10px;
-    margin-right: 55px;
+    margin-right: 50px;
   }
 }
 
@@ -710,10 +762,10 @@ footer {
   }
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1279px) {
   .container-meal {
-    margin-left: 10px;
-    margin-right: 30px;
+    margin-left: 60px;
+    margin-right: 50px;
   }
 }
 
@@ -735,7 +787,7 @@ footer {
     font-size: 1.2em;
   }
   .container-meal {
-    margin-left: 30px;
+    margin-left: 40px;
     margin-right: 20px;
   }
 }
