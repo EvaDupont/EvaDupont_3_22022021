@@ -107,12 +107,12 @@
                 top : 10px;
                     .check-icons 
                     {
-                    color: $color-white;
+                    color:$color-white;
                     padding : 5px;
                     transform-origin: center;
                     animation-name: check;
-                    animation-duration: 900ms; 
-                    animation-delay: 400ms ;
+                    animation-duration: 800ms; 
+                    animation-delay: 300ms ;
                     animation-iteration-count: 1;
                     }
                 }
@@ -192,7 +192,14 @@
                 width: 20px;
                 left : -20px;
                 top : 10px;
+                .check-icons 
+                    {
+                    position : absolute;
+                    top : 8px;
+                    right : 10px;
+                    }
                 }
+
             }
     }
 
