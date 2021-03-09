@@ -1,4 +1,4 @@
-@media screen and (max-width : 9000px) /* version Bureau */
+@media screen and (max-width : 3000px) /* version Bureau */
 {
     .page-resto
     {
@@ -23,8 +23,9 @@
 
     .return
     {
+        font-size: 2em;
         position: absolute;
-        top: 30px;
+        top: 50px;
         left : 30px;
     &:active
         {
@@ -34,7 +35,7 @@
     }
 }
 
-@media screen and (max-width : 1000px)
+@media screen and (max-width : 1223px)
 {
     .page-resto
     {
@@ -52,22 +53,21 @@
             {
                 width: 200px;
                 height: auto; 
-                margin-top : 5px;
+                margin-top : 15px;
             }      
     }
 
     .return
     {
-        
-        position : absolute;
-        top : 20px;
-        left :20px;
-        &:active
-            {
-                color: $color-primary ;
-            }
+        font-size: 1.4em;
+        position: absolute;
+        top: 30px;
+        left : 30px;
+    &:active
+        {
+            color: $color-primary ;
+        }
     }
-
 }
 
 
@@ -90,16 +90,15 @@
             {
                 width: 150px;
                 height: auto; 
-                padding-top: 10px;
-                padding-bottom: 10px;
+                margin-top: 5px;
             }
             
     }
 
-    /* icone retour page menu x4*/
     .return
     {
         
+        font-size: 1em;
         position : absolute;
         top : 15px;
         left :15px;

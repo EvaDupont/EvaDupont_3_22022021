@@ -232,7 +232,7 @@ footer {
 }
 
 /*ANIMATIONS PAGES RESTAURANTS */
-@media screen and (max-width: 9000px) {
+@media screen and (max-width: 3000px) {
   .check-icons {
     color: #F2F2F2;
   }
@@ -241,6 +241,9 @@ footer {
     min-width: 0;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  .flex-price {
+    font-weight: bold;
   }
   .meal-menu {
     background: #FFFFFF;
@@ -262,9 +265,6 @@ footer {
     cursor: pointer;
   }
   .meal-menu:hover {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     min-width: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -287,7 +287,7 @@ footer {
     width: 30px;
     padding: 15px;
     position: relative;
-    left: -110px;
+    left: -80px;
     top: 10px;
   }
   .meal-menu:hover + .check .check-icons {
@@ -340,7 +340,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1223px) {
   .meal-menu {
     font-size: 0.9em;
   }
@@ -359,7 +359,7 @@ footer {
   .meal-menu:hover + .check {
     height: 30px;
     width: 30px;
-    left: -60px;
+    left: -55px;
     top: 10px;
   }
 }
@@ -392,7 +392,7 @@ footer {
 @-webkit-keyframes menu-reduceD {
   0% {
     border-radius: 10px;
-    margin-right: 15px;
+    margin-right: 5px;
   }
   100% {
     border-radius: 10px 0px 0px 10px;
@@ -403,7 +403,7 @@ footer {
 @keyframes menu-reduceD {
   0% {
     border-radius: 10px;
-    margin-right: 15px;
+    margin-right: 5px;
   }
   100% {
     border-radius: 10px 0px 0px 10px;
@@ -418,7 +418,7 @@ footer {
   }
   100% {
     border-radius: 10px 0px 0px 10px;
-    margin-right: 50px;
+    margin-right: 55px;
   }
 }
 
@@ -429,7 +429,7 @@ footer {
   }
   100% {
     border-radius: 10px 0px 0px 10px;
-    margin-right: 50px;
+    margin-right: 55px;
   }
 }
 
@@ -529,7 +529,7 @@ footer {
 }
 
 /*--> FICHES RESTO x4 <--*/
-@media screen and (max-width: 9000px) {
+@media screen and (max-width: 3000px) {
   /* image d'accueil resto */
   .img-restaurants {
     width: 100%;
@@ -566,6 +566,7 @@ footer {
     position: relative;
     top: 10px;
     right: 300px;
+    padding-right: 10px;
   }
   .title-menu {
     font-size: 2em;
@@ -591,8 +592,11 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 90%;
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
   /*FLEXBOX titre plat et prix */
   .meal-flex {
@@ -604,9 +608,6 @@ footer {
             justify-content: space-between;
     padding-right: 10px;
     min-width: 0;
-  }
-  .flex-price {
-    font-weight: bold;
   }
   .entrees-block, .plats-block, .desserts-block, .flex-block {
     display: -webkit-box;
@@ -658,16 +659,26 @@ footer {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1223px) {
   .section-menu {
     position: relative;
     margin-top: -100px;
   }
-  .title-menu, .full-empties {
+  .title-menu {
     font-size: 1.8em;
+  }
+  .full-empties {
+    font-size: 1.8em;
+    position: relative;
+    top: 10px;
+    right: 280px;
   }
   .title-meal {
     font-size: 1.2em;
+  }
+  .container-meal {
+    margin-left: 80px;
+    margin-right: 20px;
   }
 }
 
@@ -679,15 +690,23 @@ footer {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .title-menu, .full-empties {
+  .title-menu {
     font-size: 1.6em;
+  }
+  .full-empties {
+    font-size: 1.6em;
+    position: relative;
+    top: 10px;
+    left: -280px;
   }
   .title-meal {
     font-size: 1em;
   }
   .container-meal {
     margin-left: 5px;
-    padding-left: 20px;
+    margin-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -707,7 +726,7 @@ footer {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 9000px) {
+@media screen and (max-width: 3000px) {
   .page-resto {
     position: absolute;
     width: 100%;
@@ -729,8 +748,9 @@ footer {
     margin-top: 30px;
   }
   .return {
+    font-size: 2em;
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 30px;
   }
   .return:active {
@@ -738,7 +758,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1223px) {
   .page-resto {
     position: absolute;
     width: 100%;
@@ -757,12 +777,13 @@ footer {
   .logo-header .logo-img {
     width: 200px;
     height: auto;
-    margin-top: 5px;
+    margin-top: 15px;
   }
   .return {
+    font-size: 1.4em;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 30px;
   }
   .return:active {
     color: #9356DC;
@@ -787,11 +808,10 @@ footer {
   .logo-header .logo-img {
     width: 150px;
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 5px;
   }
-  /* icone retour page menu x4*/
   .return {
+    font-size: 1em;
     position: absolute;
     top: 15px;
     left: 15px;
