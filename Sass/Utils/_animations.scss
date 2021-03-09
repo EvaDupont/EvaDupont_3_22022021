@@ -89,7 +89,7 @@
             {
                 min-width: 0;
                 box-shadow: none;
-                animation-name : menu-reduceD;
+                animation-name : menu-reduceDBig;
                 animation-duration: 700ms;
                 animation-fill-mode: both;
                 animation-timing-function: linear;
@@ -103,7 +103,7 @@
                 width: 30px;
                 padding : 15px;
                 position: relative;
-                left : -80px;
+                left : -115px;
                 top : 10px;
                     .check-icons 
                     {
@@ -147,7 +147,32 @@
   
 }
 
-@media screen and (max-width : 1223px) /* VERSION TABLETTE */
+@media screen and (max-width : 1439px)
+{
+.meal-menu
+    {
+        font-size: 1em;
+        &:hover
+        {
+            animation-name : menu-reduceD;
+            animation-duration: 700ms;
+            animation-fill-mode: both;
+            animation-timing-function:  linear; 
+            transition : all;
+            +.check
+            {
+            height : 30px;
+            width: 30px;
+            left : -80px;
+            top : 10px;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width : 1023px) /* VERSION TABLETTE */
 {
 
     .meal-menu

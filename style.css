@@ -268,8 +268,8 @@ footer {
     min-width: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
-    -webkit-animation-name: menu-reduceD;
-            animation-name: menu-reduceD;
+    -webkit-animation-name: menu-reduceDBig;
+            animation-name: menu-reduceDBig;
     -webkit-animation-duration: 700ms;
             animation-duration: 700ms;
     -webkit-animation-fill-mode: both;
@@ -287,7 +287,7 @@ footer {
     width: 30px;
     padding: 15px;
     position: relative;
-    left: -80px;
+    left: -115px;
     top: 10px;
   }
   .meal-menu:hover + .check .check-icons {
@@ -340,7 +340,31 @@ footer {
   }
 }
 
-@media screen and (max-width: 1223px) {
+@media screen and (max-width: 1439px) {
+  .meal-menu {
+    font-size: 1em;
+  }
+  .meal-menu:hover {
+    -webkit-animation-name: menu-reduceD;
+            animation-name: menu-reduceD;
+    -webkit-animation-duration: 700ms;
+            animation-duration: 700ms;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-transition: all;
+    transition: all;
+  }
+  .meal-menu:hover + .check {
+    height: 30px;
+    width: 30px;
+    left: -80px;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
   .meal-menu {
     font-size: 0.9em;
   }
@@ -394,6 +418,28 @@ footer {
   }
 }
 
+@-webkit-keyframes menu-reduceDBig {
+  0% {
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+  100% {
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 110px;
+  }
+}
+
+@keyframes menu-reduceDBig {
+  0% {
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+  100% {
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 110px;
+  }
+}
+
 @-webkit-keyframes menu-reduceD {
   0% {
     border-radius: 10px;
@@ -401,7 +447,7 @@ footer {
   }
   100% {
     border-radius: 10px 0px 0px 10px;
-    margin-right: 100px;
+    margin-right: 80px;
   }
 }
 
@@ -412,7 +458,7 @@ footer {
   }
   100% {
     border-radius: 10px 0px 0px 10px;
-    margin-right: 100px;
+    margin-right: 80px;
   }
 }
 
@@ -601,7 +647,7 @@ footer {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-right: 60px;
-    margin-left: 20px;
+    margin-left: 60px;
   }
   /*FLEXBOX titre plat et prix */
   .meal-flex {
@@ -664,7 +710,14 @@ footer {
   }
 }
 
-@media screen and (max-width: 1223px) {
+@media screen and (max-width: 1439px) {
+  .container-meal {
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
   .section-menu {
     position: relative;
     margin-top: -100px;
@@ -682,7 +735,7 @@ footer {
     font-size: 1.2em;
   }
   .container-meal {
-    margin-left: 80px;
+    margin-left: 30px;
     margin-right: 20px;
   }
 }
@@ -753,6 +806,7 @@ footer {
     margin-top: 30px;
   }
   .return {
+    color: #99E2D0;
     font-size: 2em;
     position: absolute;
     top: 50px;
@@ -763,7 +817,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1223px) {
+@media screen and (max-width: 1023px) {
   .page-resto {
     position: absolute;
     width: 100%;
@@ -785,6 +839,7 @@ footer {
     margin-top: 15px;
   }
   .return {
+    color: #FF79DA;
     font-size: 1.4em;
     position: absolute;
     top: 30px;
@@ -816,6 +871,7 @@ footer {
     margin-top: 5px;
   }
   .return {
+    color: #000000;
     font-size: 1em;
     position: absolute;
     top: 15px;
@@ -970,7 +1026,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1223px) {
+@media screen and (max-width: 1023px) {
   .bloc-fonctn {
     width: 220px;
     font-size: 0.9em;

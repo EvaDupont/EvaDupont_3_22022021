@@ -23,6 +23,7 @@
 
     .return
     {
+        color: $color-tertiary;
         font-size: 2em;
         position: absolute;
         top: 50px;
@@ -35,7 +36,7 @@
     }
 }
 
-@media screen and (max-width : 1223px)
+@media screen and (max-width : 1023px)
 {
     .page-resto
     {
@@ -59,6 +60,7 @@
 
     .return
     {
+        color: $color-secondary;
         font-size: 1.4em;
         position: absolute;
         top: 30px;
@@ -91,13 +93,12 @@
                 width: 150px;
                 height: auto; 
                 margin-top: 5px;
-            }
-            
+            }   
     }
 
     .return
     {
-        
+        color:$color-text;
         font-size: 1em;
         position : absolute;
         top : 15px;
